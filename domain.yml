@@ -1,0 +1,780 @@
+version: "3.1"
+
+intents:
+  - sapa
+  - start
+  - penutup
+  - ya
+  - wisata_tidak
+  - wisata_pantai_tidak
+  - wisata_religi_tidak
+  - wisata_hiburan_tidak
+  - wisata_sejarah_tidak
+  - wisata_alam
+  - umbul_sidomukti
+  - pinuspark_ungaran
+  - cimoory
+  - kopeng_treetop_adventure_park
+  - eling_bening
+  - taman_bunga_celosia
+  - ayanaz_gedong_songo
+  - puri_maerokoco
+  - lokasi_umbul
+  - lokasi_pinus
+  - lokasi_cimoory
+  - lokasi_kopeng
+  - lokasi_eling
+  - lokasi_celosia
+  - lokasi_ayanaz
+  - lokasi_puri
+  - tiketumbulsidomukti
+  - tiketpinusparkungaran
+  - tiketcimoorysemarang
+  - tiketkopeng
+  - tiketelingbening
+  - tikettamanbunga
+  - tiketayanaz
+  - tiketpuri
+  - fasilitas
+  - fasilitas_pinus
+  - fasilitas_cimoory
+  - fasilitas_kopeng
+  - fasilitas_eling
+  - fasilitas_celosia
+  - fasilitas_ayanaz
+  - fasilitas_puri
+  - ketentuan
+  - ketentuan_barang
+  - jamoperasional
+  - jamoperasional_pinus
+  - jamoperasional_cimoory
+  - jamoperasional_kopeng
+  - jamoperasional_eling
+  - jamoperasional_celosia
+  - jamoperasional_ayanaz
+  - jamoperasional_puri
+  - wisata_pantai
+  - pantai_marina
+  - lokasi_pantai_marina
+  - tiket_pantai_marina
+  - fasilitas_pantai_marina
+  - jamoperasional_pantai_marina
+  - pantai_baruna
+  - lokasi_pantai_baruna
+  - tiket_pantai_baruna
+  - fasilitas_pantai_baruna
+  - jamoperasional_pantai_baruna
+  - pantai_cipta
+  - lokasi_pantai_cipta
+  - tiket_pantai_cipta
+  - fasilitas_pantai_cipta
+  - jamoperasional_pantai_cipta
+  - pantai_tirang
+  - lokasi_pantai_tirang
+  - tiket_pantai_tirang
+  - fasilitas_pantai_tirang
+  - jamoperasional_pantai_tirang
+  - pantai_maron
+  - lokasi_pantai_maron
+  - tiket_pantai_maron
+  - fasilitas_pantai_maron
+  - jamoperasional_pantai_maron
+  - wisata_religi
+  - klenteng_sam_poo_kong
+  - lokasi_klenteng
+  - tiket_klenteng
+  - fasilitas_klenteng
+  - jamoperasional_klenteng
+  - masjid_agung_semarang
+  - lokasi_masjid_agung
+  - tiket_masjidagung
+  - fasilitas_masjid_agung
+  - jamoperasional_masjid_agung
+  - masjid_kapal_semarang
+  - lokasi_masjid_kapal
+  - tiket_masjid_kapal
+  - fasilitas_masjid_kapal
+  - jamoperasional_masjid_kapal
+  - pura_agung_girinatha
+  - lokasi_pura
+  - tiket_pura
+  - fasilitas_pura
+  - jamoperasional_pura
+  - pagoda_avolakitesvara
+  - lokasi_pagoda
+  - tiket_pagoda
+  - fasilitas_pagoda
+  - jamoperasional_pagoda
+  - wisata_hiburan
+  - saloka
+  - lokasi_saloka
+  - tiket_saloka
+  - fasilitas_saloka
+  - jamoperasional_saloka
+  - dusun_semilir
+  - lokasi_dusun_semilir
+  - tiket_dusun_semilir
+  - fasilitas_dusun_semilir
+  - jamoperasional_dusun_semilir
+  - semarang
+  - lokasi_art
+  - tiket_art
+  - fasilitas_art
+  - jamoperasional_art
+  - kota_tua
+  - lokasi_koeta
+  - tiket_koeta
+  - fasilitas_koeta
+  - jamoperasional_koeta
+  - ferris
+  - lokasi_ferris
+  - tiket_ferris
+  - fasilitas_ferris
+  - jamoperasional_ferris
+  - wisata_sejarah
+  - kota_lama
+  - lokasi_kota_lama
+  - tiket_kota_lama
+  - fasilitas_kota_lama
+  - jamoperasional_kota_lama
+  - lawang_sewu
+  - lokasi_lawang
+  - tiket_lawang
+  - fasilitas_lawang_sewu
+  - jamoperasional_lawang_sewu
+  - candi
+  - lokasi_candi
+  - tiket_candi
+  - fasilitas_candi
+  - jamoperasional_candi
+  - museum_mandala
+  - lokasi_mandala
+  - tiket_mandala
+  - fasilitas_mandala
+  - jamoperasional_mandala
+  - museum_ronggo
+  - lokasi_ronggowarsito
+  - tiket_ronggowarsito
+  - fasilitas_ronggowarsito
+  - jamoperasional_ronggowarsito
+  - museum_kereta
+  - lokasi_kereta
+  - tiket_kereta
+  - fasilitas_kereta
+  - jamoperasional_kereta
+  - museum_rekor
+  - lokasi_rekor
+  - tiket_rekor
+  - fasilitas_rekor
+  - jamoperasional_rekor
+  - bot_challenge
+
+responses:
+  utter_sapa:
+  - text: "Halo, Selamat datang di SEMATA Bot! Layanan informasi mengenai Pariwisata yang ada di Kota dan Kabupaten Semarang.\nBerikut merupakan rekomendasi wisata yang ada pada chatbot ini : \n=> Wisata Alam \n=> Wisata Pantai \n=> Wisata Religi \n=> Wisata Hiburan \n=> Wisata Sejarah \nIzin kan saya untuk memberikan rekomendasi tempat wisata yang anda ingin kan, silahkan klik tombol dibawah ini."
+    buttons:
+      - title: "Ya"
+        payload: "/ya"
+      - title: "Tidak"
+        payload: "/penutup"
+
+  utter_ya:
+  - text: "Apakah anda mencari rekomendasi wisata alam? (Ya/Tidak)"
+    buttons:
+      - title: "Ya"
+        payload: "/wisata_alam"
+      - title: "Tidak"
+        payload: "/wisata_tidak"
+
+  utter_tidak:
+  - text: "Apakah anda mencari rekomendasi wisata pantai? (Ya/Tidak)"
+    buttons:
+      - title: "Ya"
+        payload: "/wisata_pantai"
+      - title: "Tidak"
+        payload: "/wisata_pantai_tidak"
+
+  utter_pantai_tidak:
+  - text: "Apakah anda mencari rekomendasi wisata religi? (Ya/Tidak)"
+    buttons:
+      - title: "Ya"
+        payload: "/wisata_religi"
+      - title: "Tidak"
+        payload: "/wisata_religi_tidak"
+
+  utter_religi_tidak:
+  - text: "Apakah anda mencari rekomendasi wisata hiburan? (Ya/Tidak)"
+    buttons:
+      - title: "Ya"
+        payload: "/wisata_hiburan"
+      - title: "Tidak"
+        payload: "/wisata_hiburan_tidak"
+
+  utter_hiburan_tidak:
+  - text: "Apakah anda mencari rekomendasi wisata sejarah? (Ya/Tidak)"
+    buttons:
+      - title: "Ya"
+        payload: "/wisata_sejarah"
+      - title: "Tidak"
+        payload: "/wisata_sejarah_tidak"
+
+  utter_sejarah_tidak:
+  - text: "Terima kasih telah menggunakan layanan SEMATA BOT. \nSampai jumpa!"
+  
+  utter_wisata_sejarah:
+  - text: "Berikut merupakan list wisata sejarah yang ada di kabupaten dan kota Semarang :\n1. Kota Lama Semarang \n2. Lawang Sewu \n3. Candi Gedong Songo \n4. Museum Perjuangan Mandala Bhakti \n5. Museum Ronggo Warsito \n6. Museum Kereta Api Ambarawa \n7. Museum Rekor Dunia Indonesia"
+    buttons:
+      - title: "1"
+        payload: "/kota_lama"
+      - title: "2"
+        payload: "/lawang_sewu"
+      - title: "3"
+        payload: "/candi"
+      - title: "4"
+        payload: "/museum_mandala"
+      - title: "5"
+        payload: "/museum_ronggo"
+      - title: "6"
+        payload: "/museum_kereta"
+      - title: "7"
+        payload: "/museum_rekor"
+
+  utter_kota_lama: 
+  - text: "Kawasan Kota Lama Semarang merupakan kota yang sering mendapat sorotan sebagai salah satu aset pusaka. Kawasan Kota Lama Semarang merupakan peninggalan penjajahan belanda yang mendapat julukan sebagai Little Netherland. Lokasinya yang dikelilingi kanal-kanal dengan bangunan berlanggam eropa menjadikan kawasan ini mirip sebuah kota lainnya yang berada di Belanda. Jika dilihat dari sejarah, kawasan ini merupakan cikal bakal dari pembangunan Kota Semarang dan memiliki luas sekitar ± 31 ha. \nBeberapa infomasi dibawah ini dapat anda tanyakan pada chatbot ini : \n ==> Jam Operasional \n ==> Lokasi \n ==> Fasilitas \n ==> Harga Tiket"
+
+  utter_lokasi_kota_lama:
+  - text: "Lokasi Kota Lama terletak di Semarang Utara, Kota Semarang, Jawa Tengah 50174. Berikut merupakan linK Google Maps untuk menuju lokasi Kota Lama Semarang : https://maps.app.goo.gl/9ihx9QPsA9ZCujie6"
+
+  utter_tiket_kota_lama:
+  - text: "Objek wisata Koeta Lama Semarang dapat dikunjungi secara GRATIS."
+
+  utter_fasilitas_kota_lama:
+  - text: "Beberapa fasilitas yang dimiliki oleh objek wisata Kota Lama Semarang adalah sebagai berikut :\n1. Mushola \n2. Toilet \n3. Tempat sampah \n4. Cafe-cafe unik \n5. Sepeda \n6. Penyewaan vespa \n7. Guide"
+
+  utter_jamoperasional_kota_lama:
+  - text: "Objek wisata kota lama semarang dapat dikunjungi 24 Jam. Terima kasih"
+
+  utter_lawang_sewu:
+  - text: "Lawang Sewu adalah gedung bersejarah milik PT Kereta Api Indonesia (Persero) yang awalnya digunakan sebagai Kantor Pusat perusahaan kereta api swasta Nederlandsch-Indische Spoorweg Maatschappij (NISM). Gedung Lawang Sewu dibangun secara bertahap di atas lahan seluas 18.232 m2. Bangunan utama dimulai pada 27 Februari 1904 dan selesai pada Juli 1907. Sedangkan bangunan tambahan dibangun sekitar tahun 1916 dan selesai tahun 1918. \nBeberapa infomasi dibawah ini dapat anda tanyakan pada chatbot ini : \n ==> Jam Operasional \n ==> Lokasi \n ==> Fasilitas \n ==> Harga Tiket"
+
+  utter_lokasi_lawang:
+  - text: "Lokasi Lawang Sewu terletak di Jl. Pemuda No.160, Sekayu, Kec. Semarang Tengah, Kota Semarang, Jawa Tengah 50132. Berikut merupakan link Google Maps untuk menuju lokasi objek wisata Lawang Sewu : https://maps.app.goo.gl/aTfiWGafZXauyJBt5"
+
+  utter_tiket_lawang:
+  - text: "Berikut merupakan harga tiket untuk objek wisata Lawang Sewu : \n==>Tiket masuk objek wisata lawang sewu : Rp. 20.000"
+
+  utter_fasilitas_lawang_sewu:
+  - text: "Beberapa fasilitas yang dimiliki oleh objek wisata Lawang Sewu adalah sebagai berikut :\n1. Mushola. \n2. Toilet. \n3. Smoking Area. \n4. Ruang PPPK. \n5. Ruang Audio Visual. \n6. Kantor Pengelola. \n7. Monumen."
+
+  utter_jamoperasional_lawang_sewu:
+  - text: "Objek wisata Lawang Sewu buka dari hari senin sampai dengan hari minggu dari jam 08.00 pagi sampai dengan 20.00 malam"
+
+  utter_candi:
+  - text: "Candi Gedong Songo adalah nama sebuah komplek candi bercorak Hindu yang terletak di Desa Candi, Kecamatan Bandungan, Kabupaten Semarang. \nNama Gedong Songo berasal dari Bahasa Jawa, yaitu Gedong yang artinya bangunan dan Songo yang berarti sembilan. \nThomas Stamford Raffles adalah penemu candi ini pada sekitar tahun 1804. Saat ini, Candi Gedong Songo menjadi salah satu tujuan wisata populer di Semarang. \nBeberapa infomasi dibawah ini dapat anda tanyakan pada chatbot ini : \n ==> Jam Operasional \n ==> Lokasi \n ==> Fasilitas \n ==> Harga Tiket"
+
+  utter_lokasi_candi:
+  - text: "Lokasi Candi Gedong Songo terletak di Jalan Ke Candi Gedong Songo, Candi, Krajan, Banyukuning, Bandungan, Kabupaten Semarang, Jawa Tengah 50614. Berikut merupakan link Google Maps untuk lokasi objek wisata Candi Gedong Songo : https://maps.app.goo.gl/2kmtTsydHTnoJ58B9"
+
+  utter_tiket_candi:
+  - text: "Berikut merupakan harga tiket untuk objek wisata Candi Gedong Songo : \n==>Tiket masuk : Rp. 8.000 \n==>Tiket masuk mancanegara : Rp. 75.000 \n==>Tiket paket lokal : Rp. 70.000 \n==>Tiket paket mancanegara : Rp. 90.000"
+  
+  utter_fasilitas_candi:
+  - text: "Beberapa fasilitas yang dimiliki oleh objek wisata Candi Gedong Songo adalah sebagai berikut : \n1. Area parkir kendaraan  \n2. Muholla \n3. Tempat Kuliner \n4. Toilet"
+
+  utter_jamoperasional_candi:
+  - text: "Jam operasional wisata Candi Gedong Songo dimulai dari jam 08.00 pagi sampai dengan jam 20.00 malam. Terima kasih"
+
+  utter_museum_mandala:
+  - text: "Museum Perjuangan Mandala Bhakti merupakan bangunan yang sarat akan sejarah di Kota Semarang. Museum ini merupakan Pengadilan Tinggi Hindia Belanda atau Raad Van Justise yang berdiri pada tahun 1906 silam. Bangunan ini digunakan sebagai markas polisi militer atau Ken Pei Tai pada masa penjajahan Jepang. Lalu pada masa kemerdekaan, bangunan ini diambil alih oleh TNI dan dijadikan Markas Divisi II Jateng pimpinan Kolonel Gatot Subroto. Setelah itu, pada 1 Maret 1985, gedung ini dialihfungsikan sebagai museum. \nBeberapa infomasi dibawah ini dapat anda tanyakan pada chatbot ini : \n ==> Jam Operasional \n ==> Lokasi \n ==> Fasilitas \n ==> Harga Tiket"
+
+  utter_lokasi_mandala:
+  - text: "Lokasi Museum Perjuangan Mandala Bhakti terletak di Jalan Mgr Soegijapranata No.1, Barusari, Kec. Semarang Sel., Kota Semarang, Jawa Tengah 50245. Berikut merupakan link Google Maps untuk lokasi objek wisata Museum Mandala : https://maps.app.goo.gl/hnAFwYP17edAbr6AA"
+
+  utter_tiket_mandala: 
+  - text: "Berikut merupakan harga tiket untuk objek wisata Museum Perjuangan Mandala Bhakti : \n==>Tiket masuk : Rp. 5.000"
+
+  utter_fasilitas_mandala:
+  - text: "Beberapa fasilitas yang dimiliki oleh objek wisata Museum Perjuangan Mandala Bhakti adalah sebagai berikut : \n1. Area Parkir \n2. Toilet \n3. Taman \n4. Restoran"
+
+  utter_jamoperasional_mandala:
+  - text: "Jam operasional Museum Perjuangan Mandala Bhakti : \n==>Senin - Jum at dari jam 08.00 pagi sampai dengan jam 15.00 sore \n==>Sabtu dari jam 08.00  pagi sampai dengan jam 18.00 sore \n==>Minggu libur. Terima kasih"
+  
+  utter_museum_ronggo:
+  - text: "Museum Ronggowarsito merupakan bentuk dari museum regional, dimana didalamnya memamerkan banyak koleksi tentang keagungan, keluhuran, dan keanekaragaman khasanah budaya di Jawa Tengah sejak zaman pra sejarah hingga masa pembangunan. Museum Ronggowarsito memiliki 10 jenis koleksi berupa koleksi geologika, biologika, etnografika, arkeologika, historika, numismatika, heraldika, keramalogika, seni rupa, dan teknologika. \nBeberapa infomasi dibawah ini dapat anda tanyakan pada chatbot ini : \n ==> Jam Operasional \n ==> Lokasi \n ==> Fasilitas \n ==> Harga Tiket"
+
+  utter_lokasi_ronggowarsito:
+  - text: "Lokasi objek wisata Museum Ronggowarsito terletak di Jl. Abdulrahman Saleh No.1, Kalibanteng Kidul, Kec. Semarang Barat, Kota Semarang, Jawa Tengah 50149. Berikut merupakan link Google Maps untuk menuju lokasi objek wisata Museum Ronggowarsito : https://maps.app.goo.gl/67rv6uF9zHt7mrgx9"
+
+  utter_tiket_ronggowarsito:
+  - text: "Berikut merupakan harga tiket untuk objek wisata Museum Ronggowarsito : \n==>Tiket masuk anak - anak : Rp. 2.000 \n==>Tiket masuk dewasa Rp. 4.000 \n==>Tiket masuk mancanegara : Rp. 10.000"
+
+  utter_fasilitas_ronggowarsito: 
+  - text: "Beberapa fasilitas yang dimiliki oleh objek wisata Museum Ronggowarsito adalah sebagai berikut : \n1. Gedung pameran tetap \n2. Ruang koleksi emas \n3. Ruang audiovisual dengan kapasitas 40 orang \n4. Perpustakaan untuk umum \n5. Auditorium \n6. Taman dan tempat bermain anak-anak 125 mobil \n7. Gedung apresiasi budaya \n8. Laboratorium \n9. Mushola \n10. Toilet \n11. Kantin \n12. Gedung art shop \n13. Toko koperasi \n14. Wisma "
+
+  utter_jamoperasional_ronggowarsito:
+  - text: "Jam operasional wisata Candi Gedong Songo dimulai dari jam 08.00 pagi sampai dengan jam 15.00 sore. Terima kasih"
+
+  utter_museum_kereta:
+  - text: "Museum Kereta Api Ambarawa terletak di pusat kota Ambarawa, dekat jalan utama Semarang-Jogja, sekitar 20 kilometer dari kota Ungaran. Museum KA Ambarawa merupakan satu-satunya museum yang memamerkan teknologi kereta kuno dan warisan kolonial Belanda. Museum ini menawarkan paket rekreasi yang dapat membawa pengunjung di sekitar desa dengan kereta api kuno sambil menikmati gugusan pegunungan dan rawa pening. Bangunan ini pertamakali  dibangun atas instruksi Raja Willem I untuk memudahkan sistem transportasi militer. Pada tahun 1976, Sopeardjo Rustam, Gubernur Jawa Tengah, mengubah fungsi stasiun sebagai museum. \nBeberapa infomasi dibawah ini dapat anda tanyakan pada chatbot ini : \n ==> Jam Operasional \n ==> Lokasi \n ==> Fasilitas \n ==> Harga Tiket"
+
+  utter_lokasi_kereta:
+   - text: "Lokasi objek wisata Museum Kereta Api Ambarawa terletak di Jl. Stasiun No.1, Panjang Kidul, Panjang, Kec. Ambarawa, Kabupaten Semarang, Jawa Tengah 50614. Berikut merupakan link Google Maps untuk menuju lokasi objek wisata Museum Kereta Api Ambarawa : https://maps.app.goo.gl/BkG5eWkmM6515xZJ8"
+
+  utter_tiket_kereta: 
+  - text: "Berikut merupakan harga tiket untuk objek wisata Museum Kereta Api Ambarawa : \n==>Tiket masuk anak - anak : Rp. 10.000 \n==>Tiket masuk dewasa : Rp. 20.000 \n==> Tiket masuk mancanegara : Rp. 30.000"
+
+  utter_fasilitas_kereta:
+  - text: "Beberapa fasilitas yang dimiliki oleh objek wisata Museum Kereta Api Ambarawa adalah sebagai berikut : \n1. Kantin \n2. Toko Oleh-oleh \n3. Mushola \n4. Toilet \n5. Tempat Parkir yang luas \n6. Pusat Informasi \n7. Warung Makan"
+
+  utter_jamoperasional_kereta:
+  - text: "Jam operasional wisata Museum Kereta Api Indonesia dimulai dari jam 08.00 pagi sampai dengan jam 17.00 sore. Terima kasih"
+
+  utter_museum_rekor:
+  - text: "Museum Rekor-Dunia Indonesia atau MURDI adalah sebuah museum yang didirikan oleh Jaya Suprana. Jaya Suprana memprakarsai berdirinya Museum Rekor Indonesia, yang sekarang dikenal dengan Museum Rekor Dunia Indonesia di Semarang.  \nBeberapa infomasi dibawah ini dapat anda tanyakan pada chatbot ini : \n ==> Jam Operasional \n ==> Lokasi \n ==> Fasilitas \n ==> Harga Tiket"
+
+  utter_lokasi_rekor:
+  - text: "Lokasi objek wisata Museum Rekor Dunia Indonesia terletak di Jl. Perintis Kemerdekaan No.275, Srondol Kulon, Kec. Banyumanik, Kota Semarang, Jawa Tengah 50263. Berikut merupakan link Google Maps untuk menuju lokasi objek wisata Museum Rekor Dunia Indonesia : https://maps.app.goo.gl/wQppYr8zbJjKEfmt8"
+
+  utter_tiket_rekor:
+  - text: "Objek wisata Museum Rekor Dunia Indonesia dapat dikunjungi secara GRATIS."
+
+  utter_fasilitas_rekor:
+  - text: "Beberapa fasilitas yang dimiliki oleh objek wisata Museum Rekor Dunia Indonesia adalah sebagai berikut :\n1. Toilet \n2. Area parkir"
+
+  utter_jamoperasional_rekor:
+  - text: "Jam operasional wisata Museum Rekor Dunia Indonesia dimulai dari jam 09.00 pagi sampai dengan jam 15.00 sore. Terima kasih"
+
+  utter_wisata_hiburan:
+  - text: "Berikut merupakan list wisata hiburan yang ada di kabupaten dan kota Semarang :\n1. Saloka Theme Park  \n2. Dusun Semilir Eco Park \n3. Semarang Contemporary Art Gallery  \n4. Koeta Toea Semarang  \n5. Ferris Wheel CitraGrand"
+    buttons:
+      - title: "1"
+        payload: "/saloka"
+      - title: "2"
+        payload: "/dusun_semilir"
+      - title: "3"
+        payload: "/semarang"
+      - title: "4"
+        payload: "/kota_tua"
+      - title: "5"
+        payload: "/ferris"
+
+  utter_saloka:
+  - text: "Saloka Theme Park adalah taman rekreasi terbesar di Jawa Tengah yang memiliki 5 zona berbeda dengan atraksi dan wahana yang cocok untuk segala usia. Taman rekreasi ini berlokasi di Semarang dengan pemandangan indah pegunungan. \nBeberapa infomasi dibawah ini dapat anda tanyakan pada chatbot ini : \n ==> Jam Operasional \n ==> Lokasi \n ==> Fasilitas \n ==> Harga Tiket"
+
+  utter_lokasi_saloka:
+  - text: "Lokasi Saloka Theme Park terletak di Jl. Fatmawati No.154, Gumuksari, Lopait, Kec. Tuntang, Kabupaten Semarang, Jawa Tengah 50773. Berikut merupakan linK Google Maps untuk menuju lokasi Saloka Theme Park : https://maps.app.goo.gl/mhgqQH7N4Dh9pR2H9"
+
+  utter_tiket_saloka:
+  - text: "Berikut merupakan harga tiket untuk objek wisata Saloka Theme Park : \n==>Weekday Rp. 120.000 \n==>Weekend / hari libur Rp. 150.000"
+
+  utter_fasilitas_saloka:
+  - text: "Beberapa fasilitas yang dimiliki oleh objek wisata Saloka Theme Park adalah sebagai berikut : \n1. Wahana permainan \n2. Toilet \n3. Musholla \n4. Area parkir \n5. Kantin"
+
+  utter_jamoperasional_saloka:
+  - text: "Jam operasional wisata Saloka Theme Park dimulai dari jam 10.00 pagi sampai dengan jam 18.00 sore. Terima kasih"
+
+  utter_dusun_semilir:
+  - text: "Dusun Semilir adalah sebuah destinasi leisure park yang menggabungkan wahana permainan, penginapan, spot foto Instagramable, wisata kuliner, hingga perbelanjaan dalam satu area wisata. \nBeberapa infomasi dibawah ini dapat anda tanyakan pada chatbot ini : \n ==> Jam Operasional \n ==> Lokasi \n ==> Fasilitas \n ==> Harga Tiket"
+
+  utter_lokasi_dusun_semilir:
+  - text: "Lokasi objek wisata Dusun Semilir terletak di Jl. Soekarno - Hatta No.49, Ngemple, Bawen, Ngemplak, Kabupaten Semarang, Jawa Tengah 50661. Berikut merupakan link Google Maps untuk menuju lokasi objek wisata Dusun Semilir : https://maps.app.goo.gl/zUrfRRFaVVowvVpH7"
+
+  utter_tiket_dusun_semilir:
+  - text: "Berikut merupakan harga tiket untuk objek wisata Dusun Semilir dimulai dari rentang harga Rp. 30.000 sampai dengan Rp. 90.000"
+
+  utter_fasilitas_dusun_semilir:
+  - text: "Beberapa fasilitas yang dimiliki oleh objek wisata Dusun Semilir adalah sebagai berikut : \n1. Toilet  \n2. Area parkir \n3. Musholla \n4. Wahana permainan  \n5. Spot belanja \n6. Spot foto instagramable \n7. Wisata kuliner \n8. Villa Dusun Semilir"
+
+  utter_jamoperasional_dusun_semilir:
+  - text: "Jam operasional wisata Dusun Semilir pada Weekdays dimulai dari jam 08.00 pagi sampai dengan jam 18.00 sore dan pada Weekend dimulai dari jam 08.00 pagi sampai dengan jam 20.00 malam. Terima kasih"
+
+  utter_semarang:
+  - text: "Semarang Contemporary Art Gallery adalah galeri seni yang berlokasi di kawasan Kota Lama Semarang. Lebih tepatnya, museum modern ini terletak di Jalan Taman Srigunting Nomor 5-6, Tanjung Mas, Kecamatan Semarang Utara, Kota Semarang. Lokasi museum ini berjarak sekitar 3,8 kilometer dari Kawasan Simpang Lima Semarang. \nMuseum ini didirikan pada tahun 2001 yang menampilkan berbagai karya seniman kontemporer Asia di Indonesia. Ada berbagai pameran karya seni rupa dari seniman lokal maupun mancanegara yang ditampilkan di galeri seni ini. \nBeberapa infomasi dibawah ini dapat anda tanyakan pada chatbot ini : \n ==> Jam Operasional \n ==> Lokasi \n ==> Fasilitas \n ==> Harga Tiket"
+
+  utter_lokasi_art:
+  - text: "Lokasi objek wisata Semarang Contemporary Art Gallery terletak di Jalan Taman Srigunting No.5, RW.6, Tj. Mas, Kec. Semarang Utara, Kota Semarang, Jawa Tengah. Berikut merupakan link Google Maps untuk menuju lokasi objek wisata Semarang Contemporary Art Gallery : https://maps.app.goo.gl/ytnfaN5bd7iSP4eNA"
+
+  utter_tiket_art:
+  - text: "Berikut merupakan harga tiket untuk objek wisata Semarang Contemporary Art Gallery adalah sebesar Rp. 25.000 per kepala"
+
+  utter_fasilitas_art:
+  - text: "Beberapa fasilitas yang dimiliki oleh objek wisata Semarang Contemporary Art Gallery adalah sebagai berikut : \n1. Toilet \n2. Cafe \n3. Area Parkir"
+
+  utter_jamoperasional_art:
+  - text: "Jam operasional wisata Semarang Contemporary Art Gallery dimulai dari jam 10.00 pagi sampai dengan jam 20.30 malam. Terima kasih"
+
+  utter_kota_tua:
+  - text: "Koeta Toea merupakan pusat wisata dan kuliner yang mengusung konsep klasik ala Eropa. Tempat ini menjadi tujuan yang tepat untuk refreshing dan hangout bareng orang tersayang. \nBeberapa infomasi dibawah ini dapat anda tanyakan pada chatbot ini : \n ==> Jam Operasional \n ==> Lokasi \n ==> Fasilitas \n ==> Harga Tiket"
+
+  utter_lokasi_koeta:
+  - text: "Lokasi obje wisata Koeta Toea Semarang terletak di Pedurungan Tengah, Kota Semarang, Jawa Tengah.  berikut merupakan link Google Maps untuk menuju lokasi objek wisata Koeta Toea Semarang : https://maps.app.goo.gl/eiVeRS815Q5Dzkrf7"
+
+  utter_tiket_koeta:
+  - text: "Objek wisata Koeta Toea Semarang dapat dikunjungi secara GRATIS."
+
+  utter_fasilitas_koeta:
+  - text: "Beberapa fasilitas yang dimiliki oleh objek wisata Koeta Toea Semarang adalah sebagai berikut : \n1. Area Parkir Luas \n2. Pusat Oleh-Oleh \n3. Outdoor Dining Area \n4. Area Bermain Anak \n5. Toilet \n6. Mushola \n7. Hiburan"
+
+  utter_jamoperasional_koeta:
+  - text: "Jam operasional wisata Dusun Koeta Toea Semarang pada hari senin - kamis dimulai dari jam 09.00 pagi sampai dengan jam 21.00 malam dan pada jum at - minggu  dimulai dari jam 09.00 pagi sampai dengan jam 22.00 malam. Terima kasih"
+
+  utter_ferris:
+  - text: "Ferris Wheel CitraGrand merupakan salah satu bianglala yang populer di Kota Semarang. Wahana ini cocok menjadi spot yang menarik untuk menghabiskan malam tahun baru di kota ini. \nDengan ketinggian mencapai 35 meter dan diameter sekitar 30 meter, pengalaman menaiki bianglala ini akan memberikan pemandangan Kota Semarang yang luar biasa dari ketinggian. \nBeberapa infomasi dibawah ini dapat anda tanyakan pada chatbot ini : \n ==> Jam Operasional \n ==> Lokasi \n ==> Fasilitas \n ==> Harga Tiket"
+
+  utter_lokasi_ferris:
+  - text: "Lokasi objek wisata Ferris Wheel Citra Grand terletak di CitraGrand Boulevard, Jl. Kompol R Soekanto, Sambiroto, Kec. Tembalang, Kota Semarang, Jawa Tengah 50272. berikut merupakan link Google Maps untuk menuju lokasi objek wisata Ferris Wheel Citra Grand : https://maps.app.goo.gl/G4oBwWagCteVZoCx8"
+
+  utter_tiket_ferris:
+  - text: "Berikut merupakan harga tiket untuk objek wisata Ferris Wheel Citra Grand : \n==>Weekday Rp. 10.000 \n==>Weekend / hari libur Rp. 15.000"
+
+  utter_fasilitas_ferris:
+  - text: "Beberapa fasilitas yang dimiliki oleh objek wisata Ferris Wheel Citra Grand adalah sebagai berikut : \n1. Live music  \n2. Mobil hias \n3. Area parkir "
+
+  utter_jamoperasional_ferris:
+  - text: "Jam operasional wisata Ferris Wheel Citra Grand dimulai dari jam 16.00 pagi sampai dengan jam 21.00 malam. Terima kasih"
+
+  utter_wisata_religi:
+  - text: "Berikut merupakan list wisata religi yang ada di kabupaten dan kota Semarang :\n1. Klenteng Sam Poo Kong \n2. Masjid Agung Jawa Tengah \n3.	Masjid Kapal Semarang \n4. Pura Agung Giri Natha \n5. Pagoda Avalokitesvara"
+    buttons:
+      - title: "1"
+        payload: "/klenteng_sam_poo_kong"
+      - title: "2"
+        payload: "/masjid_agung_semarang"
+      - title: "3"
+        payload: "/masjid_kapal_semarang"
+      - title: "4"
+        payload: "/pura_agung_girinatha"
+      - title: "5"
+        payload: "/pagoda_avolakitesvara"
+
+  utter_klenteng_sam_poo_kong:
+  - text: "Klenteng Sam Poo Kong, juga dikenal sebagai Klenteng Gedung Batu, adalah klenteng Cina tertua di Semarang, ibukota provinsi Jawa Tengah. Bangunan ini meliputi area seluas 1.020 meter persegi dan dipengaruhi oleh gaya arsitektur Cina dan Jawa abad ke-14. Klenteng ini dicat dengan warna merah yang megah dan dimahkotai dengan atap pagoda berlapis tiga, khas budaya Asia Timur. \nBeberapa infomasi dibawah ini dapat anda tanyakan pada chatbot ini : \n ==> Jam Operasional \n ==> Lokasi \n ==> Fasilitas \n ==> Harga Tiket"
+
+  utter_lokasi_klenteng:
+  - text: "Lokasi Klenteng Sam Poo Kong terletak di Jl. Simongan No.129, Bongsari, Kec. Semarang Barat, Kota Semarang, Jawa Tengah 50148. \nBerikut merupakan link Google Maps untuk menuju lokasi Klenteng Sam Poo Kong : https://maps.app.goo.gl/xXENJfdg4dCsRpSA7"
+
+  utter_tiket_klenteng:
+  - text: "Berikut merupakan harga tiket untuk objek wisata Klenteng Sam Poo Kong : \n==>Anak - anak Rp. 5.000 \n==>Dewasa Rp. 7.000"
+
+  utter_fasilitas_kleteng: 
+  - text: "Beberapa fasilitas yang dimiliki oleh objek wisata Klenteng Sam Poo Kong adalah sebagai berikut : \n1. Arsitektur khas Chin  \n2. Tempat pemujaan Dewa Bumi \n3. Area Parkir  \n4. Toilet \n5. Tempat makan"
+
+  utter_jamoperasional_klenteng:
+  - text: "Jam operasional wisata Klenteng Sam Poo Kong buka dari hari senin - minggu dari jam 09 .00 pagi sampai dengan jam 20.000 malam. Terima kasih"
+
+  utter_masjid_agung_semarang:
+  - text: "Masjid Agung Jawa Tengah (Masjid Agung Jawa Tengah) merupakan masjid terbesar di Jawa Tengah yang terletak di Jalan Gajah Raya, Sambirejo, Kecamatan Gayamsari. Masjid ini dirancang dalam gaya arsitektur campuran Jawa, Islam dan Yunani. Bangunan utama memiliki atap berbentuk piramida dengan empat menara di setiap sudut. Bagian depan terdpata menara dengan ketinggian 99 meter, yang disebut menara Asmaul Husna. Di dalam menara terdapat museum sejarah perkembangan Islam di tanah Jawa. . \nBeberapa infomasi dibawah ini dapat anda tanyakan pada chatbot ini : \n ==> Jam Operasional \n ==> Lokasi \n ==> Fasilitas \n ==> Harga Tiket"
+
+  utter_lokasi_masjid_agung:
+  - text: "Lokasi Masjid Agung Jawa Tengah terletak di Jl. Gajah Raya, Sambirejo, Kec. Gayamsari, Kota Semarang, Jawa Tengah 50166. \nBerikut merupakan link Google Maps Menuju obkjek Wisata Masjid Agung Jawa Tengah : https://maps.app.goo.gl/6z6iTKrgY8S1FE8j8"
+
+  utter_tiket_masjidagung:
+  - text: "Berikut merupakan harga tiket untuk objek wisata Masjid Agung Jawa Tengah : \n==>Tiket Masuk Gratis \n==>Tiket Menara Asmaul Husna  Rp 7.500  "
+
+  utter_fasilitas_masjid_agung:
+  - text: "Beberapa fasilitas yang dimiliki oleh objek wisata Masjid Agung Jawa Tengah adalah sebagai berikut : \n1. Toilet \n2. Area parkir \n3. Perpustakaan \n4. auditorium  \n5. penginapan \n6. ruang akad nikah \n7. museum perkembangan Islam  \n8. kafe di bagian Menara Asmaul Husna"
+
+  utter_jamoperasional_masjid_agung:
+  - text: "Jam operasional wisata Masjid Agung Jawa Tengah buka setiap hari. Terima kasih"
+
+  utter_masjid_kapal_semarang:
+  - text: "Masjid Kapal Semarang menjadi viral di sosial media berkat bentuk nya yang tidak biasa. Masjid ini berbentuk kapal yang berada di tengah kolam daerah persawahan dan perkebunan. \nBeberapa infomasi dibawah ini dapat anda tanyakan pada chatbot ini : \n ==> Jam Operasional \n ==> Lokasi \n ==> Fasilitas \n ==> Harga Tiket"
+
+  utter_lokasi_masjid_kapal:
+  - text: "Lokasi Masjid Kapal Semarang terletak di Jl. Kyai Padak, Podorejo, Kec. Ngaliyan, Kota Semarang, Jawa Tengah. Berikut merupakan link Google Maps menuju objek wisata Masjid Kapal Semarang : https://maps.app.goo.gl/HnD8aqnZdzFPyfbn7"
+
+  utter_tiket_masjid_kapal: 
+  - text: "Berikut merupakan harga tiket untuk objek wisata Masjid Kapal Semarang : \n==>Tiket Masuk Rp. 3.000 "
+
+  utter_fasilitas_masjid_kapal:
+  - text: "beberapa fasilitas yang dimiliki oleh objek wisata masjid kapal semarang adalah sebagai berikut : \n1. Area Parkir \n2. Toilet"
+
+  utter_jamoperasional_masjid_kapal:
+  - text: "Jam operasional wisata Masjid Kapal Semarang dimulai dari jam 04.00 pagi sampai dengan jam 20.00 malam. Terima kasih"
+
+  utter_pura_agung_girinatha:
+  - text: "Pura Agung Giri Natha adalah sebuah pura Hindu yang terletak di Jalan Sumbing No. 12, Bendungan, Kecamatan Gajahmungkur, Kota Semarang, Jawa Tengah 50231. Pura ini telah diresmikan sebagai destinasi wisata religi sejak tahun 2015 dan kini semakin ramai dikunjungi oleh wisatawan domestik maupun mancanegara. \nBeberapa infomasi dibawah ini dapat anda tanyakan pada chatbot ini : \n ==> Jam Operasional \n ==> Lokasi \n ==> Fasilitas \n ==> Harga Tiket"
+
+  utter_lokasi_pura:
+  - text: "Lokasi Pura Agung Giri Natha terletak di Jl. Sumbing No.12, Bendungan, Kec. Gajahmungkur, Kota Semarang, Jawa Tengah. Berikut merupakan link Google Maps menuju objek wisata Pura Agung Giri Natha : https://maps.app.goo.gl/9XVoVK3NRTrLkHWz5"
+
+  utter_tiket_pura:
+  - text: "Berikut merupakan harga tiket untuk objek wisata Pura Agung Giri Natha : \n==>Gratis untuk umum"
+
+  utter_fasilitas_pura:
+  - text: "beberapa fasilitas yang dimiliki oleh objek wisata Pura Agung Giri Natha adalah sebagai berikut : \n1. Area parkir kendaraan \n2. Mushola \n3. Kamar mandi dan toilet \n4. Area peristirahatan \n5. Warung makanan dan minuman \n6. Area souvenir"
+
+  utter_jamoperasional_pura:
+  - text: "Jam operasional wisata Pura Agung Giri Natha dimulai dari jam 07.00 pagi sampai dengan jam 16.00 sore. Terima kasih"
+
+  utter_pagoda_avolakitesvara:
+  - text: "Pagoda Avalokitesvara Buddhagaya Watugong, merupakan tempat ibadah untuk umat budha yang terletak di Jalan Perintis Kemerdekaan, tepatnya di depan Markas Kodam IV Diponegoro, Watugong, Semarang. Pagoda ini menjadi yang tertinggi di Indonesia dengan ketinggian mencapai 45 meter. \nPagoda ini memiliki tujuh tingkatan yang didesain semakin keatas semakin menyempit. Desain arsitekturnya yang indah, membuat Pagoda Budhagaya Watugong ini begitu dikagumi oleh berbagai kalangan. \nBeberapa infomasi dibawah ini dapat anda tanyakan pada chatbot ini : \n ==> Jam Operasional \n ==> Lokasi \n ==> Fasilitas \n ==> Harga Tiket"
+
+  utter_lokasi_pagoda:
+  - text: "Lokasi Pagoda Avolakitesvara terletak di Jl. Perintis Kemerdekaan, Pudakpayung, Kec. Banyumanik, Kota Semarang, Jawa Tengah 50265 Berikut merupakan link Google Maps menuju objek wisata Pagoda Avolakitesvara : https://maps.app.goo.gl/N15ri7rpGdDS2iEo9"
+
+  utter_tiket_pagoda:
+  - text: "Berikut merupakan harga tiket untuk objek wisata Pagoda Avolakitesvara : \n==>Gratis untuk umum"
+
+  utter_fasilitas_pagoda:
+  - text: "beberapa fasilitas yang dimiliki oleh objek wisata Pagoda Avolakitesvara adalah sebagai berikut : \n1. Area parkir \n2. Toilet"
+
+  utter_jamoperasional_pagoda:
+  - text: "Jam operasional wisata Pagoda Avolakitesvara dimulai dari jam 08.00 pagi sampai dengan jam 21.00 malam. Terima kasih"
+
+  utter_wisata_pantai:
+  - text: "Berikut merupakan list wisata pantai yang ada di kabupaten dan kota Semarang :\n1. Pantai Marina \n2. Pantai Baruna \n3. Pantai Cipta \n4. Pantai Tirang \n5. Pantai Maron \nSilahkan pilih salah satu dengan klik button dibawah ini untuk mengetahui informasi lengkap terkait wisata yang di pilih :"
+    buttons:
+      - title: "1"
+        payload: "/pantai_marina"
+      - title: "2"
+        payload: "/pantai_baruna"
+      - title: "3"
+        payload: "/pantai_cipta"
+      - title: "4"
+        payload: "/pantai_tirang"
+      - title: "5"
+        payload: "/pantai_maron"
+
+  utter_pantai_marina:
+  - text: "Pantai Marina Semarang menjadi primadona wisata untuk menghabiskan akhir pekan bersama keluarga. \nPantai Marina sangat cocok dikunjungi apabila Anda ingin menikmati lautan yang tenang di bawah pohon ataupun duduk santai di sepanjang bibir pantai. Nah, sambil bersantai di Pantai Marina, Anda juga bisa menyaksikan kapal-kapal yang berlabuh di laut. Tak hanya itu, wisatawan dapat menyewa jetski, jogging, memberi makan rusa dan memancing. Obyek wisata ini memiliki fasilitas yang cukup lengkap. Mulai dari musala, kamar mandi, tempat parkir dan ruang bilas. Di sekitar pantai pun sudah dilengkapi penginapan dan tempat makan. \nBeberapa infomasi dibawah ini dapat anda tanyakan pada chatbot ini : \n ==> Jam Operasional \n ==> Lokasi \n ==> Fasilitas \n ==> Harga Tiket"
+
+  utter_lokasi_pantai_marina:
+  - text: "Lokasi Pantai Marina terletak di Tawangsari, Kota Semarang, Jawa Tengah. \nBerikut merupakan link Google Maps ke Objek wisata Pantai Marina Semarang : https://maps.app.goo.gl/XzMAUjp41RbwMzZE9"
+
+  utter_tiket_pantai_marina:
+  - text: "Berikut merupakan harga tiket untuk objek wisata Pantai Marina : \n==>Tiket Masuk Sebesar Rp. 5.000"
+
+  utter_fasilitas_pantai_marina:
+  - text: "Beberapa fasilitas yang dimiliki oleh objek wisata Pantai Marina adalah sebagai berikut : \n1. Mushola \n2. Kamar mandi \n3. Area parkir \n4. Kafe dan warung makan"
+
+  utter_jamoperasional_pantai_marina:
+  - text: "Jam operasional wisata Pantai Marina dimulai dari jam 08.00 pagi sampai dengan jam 20.000 malam. Terima kasih"
+
+  utter_pantai_baruna:
+  - text: "Pantai Baruna Semarang memiliki padang sabana yang membentang di area pantai. Hal ini menjadi keunikan dan daya tarik tersendiri untuk pengunjung pantai. Tempat ini sangat cocok untuk piknik dan bersantai di area sabana yang ada. \nBeberapa infomasi dibawah ini dapat anda tanyakan pada chatbot ini : \n ==> Jam Operasional \n ==> Lokasi \n ==> Fasilitas \n ==> Harga Tiket"
+
+  utter_lokasi_pantai_baruna:
+  - text: "Lokasi Pantai Baruna Semarang terletak di Bandarharjo, Kota Semarang, Jawa Tengah. \nBerikut merupakan link Google Maps ke objek wisata Pantai Baruna Semarang : https://maps.app.goo.gl/HVB8T5e6XtvU2my5A"
+
+  utter_tiket_pantai_baruna:
+  - text: "Berikut merupakan harga tiket untuk objek wisata Pantai Baruna : \n==>Tiket Masuk Sebesar Rp. 5.000"
+
+  utter_fasilitas_pantai_baruna:
+  - text: "Beberapa fasilitas yang dimiliki oleh objek wisata Pantai Baruna adalah sebagai berikut : \n1. Musholla \n2. Kamar mandi  \n3. Area parkir  \n4. Tempat makan"
+
+  utter_jamoperasional_pantai_baruna:
+  - text: "Jam operasional wisata Pantai Baruna dimulai dari jam 05.00 pagi sampai dengan jam 22.00 malam. Terima kasih"
+
+  utter_pantai_cipta:
+  - text: "Pantai Cipta adalah objek wisata yang berada di Desa Bandarharjo, Kecamatan Semarang Utara, Kota Semarang. Pantai ini berlokasi di belakang Terminal Petikemas, Tanjung Emas, Semarang.\nBeberapa infomasi dibawah ini dapat anda tanyakan pada chatbot ini : \n ==> Jam Operasional \n ==> Lokasi \n ==> Fasilitas \n ==> Harga Tiket"
+
+  utter_lokasi_pantai_cipta:
+  - text: "Lokasi Pantai Cipta Semarang terletak di Jl. Kw. Cipta, Bandarharjo, Kec. Semarang Utara, Kota Semarang, Jawa Tengah. \nBerikut merupakan link Google Maps ke objek wisata Pantai Cipta Semarang : https://maps.app.goo.gl/MvVjxStjhkhV71mT7"
+
+  utter_tiket_pantai_cipta:
+  - text: "Berikut merupakan harga tiket untuk objek wisata Pantai Cipta : \n==>Tiket Masuk Sebesar Rp. 5.000"
+
+  utter_fasilitas_pantai_cipta:
+  - text: "Beberapa fasilitas yang dimiliki oleh objek wisata Pantai Cipta adalah sebagai berikut : \n1. Area parkir \n2. Tempat makan \n3. Kamar mandi "
+
+  utter_jamoperasional_pantai_cipta:
+  - text: "Jam operasional wisata Pantai Cipta dimulai dari jam 06.00 pagi sampai dengan jam 18.00 sore. Terima kasih"
+
+  utter_pantai_tirang:
+  - text: "Pantai Tirang merupakan salah satu destinasi wisata Semarang terkenal selain Pantai Marina Semarang. Dulunya pantai ini adalah sebuah pulau yang bernama Pulau Tirang.
+    \nPulau ini dulu sempat menjadi ikonnya Kota Semarang berkat flora dan keindahan alam yang ada di sekitarnya. Banyak burung serta ikan yang sering terlihat di sekitar pulau.
+    \nBeberapa infomasi dibawah ini dapat anda tanyakan pada chatbot ini : \n ==> Jam Operasional \n ==> Lokasi \n ==> Fasilitas \n ==> Harga Tiket"
+
+  utter_lokasi_pantai_tirang:
+  - text: "Lokasi Pantai Tirang terletak di Tugurejo, Kec. Tugu, Kota Semarang, Jawa Tengah 50182 \nBerikut merupakan link Google Maps ke objek wisata Pantai Tirang Semarang : https://maps.app.goo.gl/8d62xsHVyZYdey6L8 "
+
+  utter_tiket_pantai_tirang:
+  - text: "Berikut merupakan harga tiket untuk objek wisata Pantai Tirang : \n==>Tiket Masuk Sebesar Rp. 5.000"
+
+  utter_fasilitas_pantai_tirang:
+  - text: "Beberapa fasilitas yang dimiliki oleh objek wisata Pantai Tirang adalah sebagai berikut : \n1. Area parkir \n2. Tempat makan \n3. Kamar mandi"
+
+  utter_jamoperasional_pantai_tirang:
+  - text: "Jam operasional wisata Pantai Tirang buka selama 24 jam. Terima kasih"
+
+  utter_pantai_maron:
+  - text: "Pantai Maron merupakan pantai yang terletak di Semarang, Jawa Tengah. Pantai Maron menawarkan pemandangan lepas pantai yang luas. \nSelain itu, pantai ini juga memiliki air yang jernih. Di sini wisatawan bisa bermain pasir serta air laut. \nBeberapa infomasi dibawah ini dapat anda tanyakan pada chatbot ini : \n ==> Jam Operasional \n ==> Lokasi \n ==> Fasilitas \n ==> Harga Tiket"
+
+  utter_lokasi_pantai_maron:
+  - text: "Lokasi Pantai Maron terletak di Tugurejo, Kec. Tugu, Kota Semarang, Jawa Tengah 50182 \nBerikut merupakan link Google Maps ke objek wisata Pantai Maron Semarang : https://maps.app.goo.gl/9wVKDhpiMesai7ND6"
+
+  utter_tiket_pantai_maron:
+  - text: "Berikut merupakan harga tiket untuk objek wisata Pantai Maron : \n==>Tiket Masuk Sebesar Rp. 5.000"
+
+  utter_fasilitas_pantai_maron:
+  - text: "Beberapa fasilitas yang dimiliki oleh objek wisata Pantai Maron adalah sebagai berikut : \n1. Area parkir \n2. Tempat makan \n3. Kamar mandi"
+
+  utter_jamoperasional_pantai_maron:
+  - text: "Jam operasional wisata Pantai Maron buka selama 24 jam. Terima kasih"
+
+  utter_wisata_alam:
+  - text: "Berikut merupakan list wisata alam yang ada di kabupaten dan kota Semarang :  \n1. Umbul Sidomukti \n2. Pinuspark Ungaran \n3. Cimoory \n4. Kopeng Treetop Adventure Park \n5. Eling Bening \n6. Taman Bunga Celosia  \n7. Ayanaz Gedong Songo  \n8. Puri Maerokoco \nSilahkan pilih salah satu dengan klik button dibawah ini untuk mengetahui informasi lengkap terkait wisata yang di pilih : "
+    buttons:
+      - title: "1"
+        payload: "/umbul_sidomukti"
+      - title: "2"
+        payload: "/pinuspark_ungaran"
+      - title: "3"
+        payload: "/cimoory"
+      - title: "4"
+        payload: "/kopeng_treetop_adventure_park"
+      - title: "5"
+        payload: "/eling_bening"
+      - title: "6"
+        payload: "/taman_bunga_celosia"
+      - title: "7"
+        payload: "/ayanaz_gedong_songo"
+      - title: "8"
+        payload: "/puri_maerokoco"
+
+  utter_pinuspark_ungaran:
+  - text: "Pinus Park merupakan destinasi wisata baru yang menawarkan nuansa alam yang menarik di Ungaran, Semarang. Dengan suasana alam yang menyegarkan dan hutan pinus yang indah, tempat ini menawarkan pengalaman wisata yang autentik dan menenangkan. \nBeberapa infomasi dibawah ini dapat anda tanyakan pada chatbot ini : \n ==> Jam Operasional \n ==> Lokasi \n ==> Fasilitas \n ==> Harga Tiket"
+
+  utter_lokasi_pinus:
+  - text: "Lokasi pinuspark ungaran terletak di dusun kalianyar desa kalirejo kecamatan Ungaran Timur Kabupaten Ungaran. \nBerikut merupakan link Google Maps ke Objek wisata Pinus Park Ungaran : https://maps.app.goo.gl/z7aJ1Szg9N8B5BmM9"
+
+  utter_cimoory:
+  - text: "Cimory Semarang merupakan salah satu tempat wisata populer yang mengusung konsep edukasi dan rekreasi milik PT Wisata Sapta Pesona (WSP), anak usaha di bawah naungan Cimory Group. \nBeberapa infomasi dibawah ini dapat anda tanyakan pada chatbot ini : \n ==> Jam Operasional \n ==> Lokasi \n ==> Fasilitas \n ==> Harga Tiket"
+  
+  utter_lokasi_cimoory:
+  - text: "Lokasi Cimoory Semarang terletak di Jalan Soekarno Hatta KM 30, Begojuh, Jatijajar, Kecamatan Bergas, Kabupaten Semarang, Jawa Tengah. \nBerikut merupakan link Google Maps ke objek wisata Cimoory Semarang : https://maps.app.goo.gl/QgxjBCR2fHXca5ty8"
+
+  utter_kopeng:
+  - text: "Kopeng Treetop Adventure Park merupakan salah satu destinasi wisata alam dan adventure yang terletak di Jalan Raya Kopeng, Desa Batur Kecamatan Getasan Kabupaten Semarang. \nBeberapa infomasi dibawah ini dapat anda tanyakan pada chatbot ini : \n ==> Jam Operasional \n ==> Lokasi \n ==> Fasilitas \n ==> Harga Tiket"
+
+  utter_lokasi_kopeng:
+  - text: "Lokasi Kopeng Treetop Adventure Park terletak di Jl. Raya Kopeng, Selo Ngisor, Batur, Kec. Getasan, Kabupaten Semarang. \nBerikut merupakan link Google Maps ke objek wisata Kopeng Treetop Adventure Park : https://maps.app.goo.gl/jEspXJ1m6bhaRxAw8"
+
+  utter_eling:
+  - text: "Eling Bening merupakan tempat wisata kekinian yang terletak di Jalan Sarjono, Bawen, Kabupaten Semarang, Provinsi Jawa Tengah. Di kawasan ini merupakan tempat liburan yang cocok untuk keluarga yang bernuansa resort modern dengan sajian pemandangan alam. Banyak tempat yang dapat dijadikan spot foto, sebab Eling Bening bagai teras luas yang berhadapan dengan gunung maupun rawa yang terletak di ketinggian. Dari kawasan ini, pengunjung dapat mengambil gambar dengan latar belakang gunung di sekitar Ambarawa. Anda seolah-olah tengah berdiri di depan gunung. \nBeberapa infomasi dibawah ini dapat anda tanyakan pada chatbot ini : \n ==> Jam Operasional \n ==> Lokasi \n ==> Fasilitas \n ==> Harga Tiket"
+
+  utter_lokasi_eling:
+  - text: "Lokasi objek wisata Eling Bening terletak di Jl. Sarjono, Bawen, Kec. Bawen, Kabupaten Semarang. \nBerikut merupakan link Google Maps ke objek wisata Eling Bening : https://maps.app.goo.gl/VVaf1ijsxs5Kn6FE6"
+
+  utter_lokasi_puri:
+  - text: "Lokasi objek wisata Puri Maerokoco terletak di Jl. Puri Anjasmoro, Tawangsari, Kec. Semarang Barat  Kota Semarang. \nBerikut merupakan link Google Maps ke objek wisata Puri Maerokoco : https://maps.app.goo.gl/wtCcSaqgrcaA94RQ9"
+
+  utter_tamanbungacelosia:
+  - text: "Taman Bunga Celosia merupakan destinasi wisata di lereng kaki gunung Ungaran, Bandungan Kabupaten Semarang. Pemandangan sekitar khas pegunungan, ditambah dengan iklim yang sejuk membuat wisatawan berkunjung ke Taman Bunga Celosia. \nBeberapa infomasi dibawah ini dapat anda tanyakan pada chatbot ini : \n ==> Jam Operasional \n ==> Lokasi \n ==> Fasilitas \n ==> Harga Tiket"
+
+  utter_lokasi_celosia:
+  - text: "Lokasi Taman Bunga Celosia terletak di Beroken, Banyukuning, Bandungan, Kabupaten Semarang \nBerikut merupakan link Google Maps ke objek wisata Taman Bunga Celosia : https://maps.app.goo.gl/S6rSr4bNssuCR6Vh6"
+
+  utter_ayanaz:
+  - text: "Ayanaz Gedongsongo adalah wisata modern yang berusaha menjaga keharmonisan dengan pemandangan alam sekitarnya. \nBeberapa infomasi dibawah ini dapat anda tanyakan pada chatbot ini : \n ==> Jam Operasional \n ==> Lokasi \n ==> Fasilitas \n ==> Harga Tiket"
+
+  utter_lokasi_ayanaz:
+  - text: "Lokasi Ayanaz Gedongsongo terletak di Candi Gedong Songo, Krajan, Banyukuning, Bandungan, Kabupaten Semarang. \nBerikut merupakan link Google Maps ke objek wisata Ayanaz Gedongsong : https://maps.app.goo.gl/LKVjzgKomzKgW2pN6"
+
+  utter_puri_maerokoco:
+  - text: "Puri Maerokoco disebut sebagai taman mininya Provinsi Jawa Tengah. Hal ini dikarenakan tempat wisata itu menyajikan miniatur keanekaragaman Provinsi Jateng yang ditampilkan dengan keunikan masing-masing kabupaten/kota. \nBeberapa infomasi dibawah ini dapat anda tanyakan pada chatbot ini : \n ==> Jam Operasional \n ==> Lokasi \n ==> Fasilitas \n ==> Harga Tiket"
+
+  utter_umbulsidomukti:
+  - text: "Umbul Sidomukti merupakan obyek wisata alam pegunungan yang terletak di Desa Sidomukti, Kecamatan Bandungan, Kabupaten Semarang, Jawa Tengah. Umbul Sidomukti berada di lereng Gunungg Ungaran dengan ketinggian 1200 mdpl. Alhasil, Umbul Sidomukti memiliki udara yang sejuk dangan pemandangan alam yang mempesona. \nBeberapa infomasi dibawah ini dapat anda tanyakan pada chatbot ini : \n ==> Jam Operasional \n ==> Lokasi \n ==> Fasilitas \n ==> Harga Tiket"
+
+  utter_lokasi_umbul:
+  - text: "Lokasi wisata umbul sidomukti terletak di desa Sidomukti Jimbaran Kecamatan Bandungan Kabupaten Semarang. \nBerikut merupakan link google maps ke objek wisata umbul sidomukti : https://maps.app.goo.gl/Xnxp3EAP4GnbGVkc9"
+
+  utter_start:
+  - text: "Halo, Selamat datang di SEMATA Bot! Layanan informasi mengenai Pariwisata yang ada di Kota dan Kabupaten Semarang.\nBerikut merupakan rekomendasi wisata yang ada pada chatbot ini : \n=> Wisata Alam \n=> Wisata Pantai \n=> Wisata Religi \n=> Wisata Hiburan \n=> Wisata Sejarah \nIzin kan saya untuk memberikan rekomendasi tempat wisata yang anda ingin kan, silahkan klik tombol dibawah ini."
+    buttons:
+      - title: "Ya"
+        payload: "/ya"
+      - title: "Tidak"
+        payload: "/penutup"
+
+  utter_penutup:
+  - text: "Terima kasih telah menggunakan layanan SEMATA BOT. \nSampai jumpa!"
+  
+  utter_tiketumbulsidomukti:
+  - text: "Berikut merupakan harga tiket untuk objek wisata Umbul Sidomukti : \n==>Tiket Masuk Kawasan Rp 5.000 \n==>Tiket Masuk kawasan(Tahun baru) Rp. 10.000 \n==>Tiket Masuk Kolam Rp. 10.000 \n==>Tiket Masuk Little Ranch Rp. 20.000 \n==>Range Harga Aktivitas Rp. 10.000 - Rp. 75.000 \n==>Range Harga Penginapan Rp. 700.000 - Rp. 2.000.000"
+
+  utter_tiketpinusparkungaran:
+  - text: "Berikut merupakan harga tiket untuk objek wisata Pinuspark Ungaran : \n==>Tiket Masuk Rp. 7.500 (Diluar biaya parkir) \n==>Tiket Masuk ke Cemara Sewu dan Pinusia Park Rp 15.000"
+
+  utter_tiketcimoorysemarang:
+  - text: "Berikut merupakan harga tiket untuk objek wisata Cimoory Semarang : \n==>Paket Diaryland sebesar Rp. 15.000 \n==>Paket Mini Zoo sebesar Rp. 25.000 \n==>Paket Combo sebesar Rp. 35.000"
+
+  utter_tiketkopeng:
+  - text: "Berikut merupakan harga tiket untuk objek wisata Kopeng Treetop Adventuru Park : \n==>Tiket Masuk Sebesar Rp. 70.000"
+
+  utter_tiketelingbening:
+  - text: "Berikut merupakan harga tiket untuk objek wisata Eling Bening : \n==>Tiket Masuk Sebesar Rp. 20.000"
+
+  utter_tikettamanbunga:
+  - text: "Berikut merupakan harga tiket untuk objek wisata Taman Bunga Celosia : \n==>Weekdays sebesar Rp. 20.000 \n==>Weekend sebesar Rp. 25.000"
+
+  utter_tiketayanaz:
+  - text: "Berikut merupakan harga tiket untuk objek wisata Ayanaz Gedongsongo : \n==>Weekdays Dewasa Rp 25.000  \n==>Weekdays Anak-anak Rp 15.000 \n==>Weekend Dewasa Rp 30.000 \n==>Weekend Anak-anak Rp15.000"
+
+  utter_tiketpuri:
+  - text: "Berikur merupakan harga tiket untuk objek wisata Puri Maerokoco : \n==>Tiket Masuk Sebesar Rp. 10.000"
+
+  utter_fasilitas:
+  - text: "Beberapa fasilitas yang dimiliki oleh objek wisata Umbul Sidomukti adalah sebagai berikut : \n1. Kolam Renang  \n2. Mini Zoo \n3. Flying Fox \n4. Restoran \n5. Toilet \n6. Area parkir \n7. Musholla \n8. Villa panggung \n9. Pondok Kopi"
+
+  utter_fasilitas_pinus:
+  - text: "Beberapa fasilitas yang dimiliki oleh objek wisata Pinuspark Ungaran adalah sebagai berikut : \n1. Musholla \n2. Kamar Mandi \n3. Mini Kafe \n4. Gazebo \n5. Jogging Track \n6. Jalan Setapak \n7. Taman Kelinci"
+
+  utter_fasilitas_cimoory: 
+  - text: "Beberapa fasilitas yang dimiliki oleh objek wisata Cimoory Semarang adalah sebagai berikut: \n1. Tempat Parkir Yang Luas \n2. Toilet \n3. Farm/Kebun \n4. Peternakan \n5. Playground \n6. Restoran \n7. Toko Souvenir \n8. Toko Khusus Coklat"
+
+  utter_fasilitas_kopeng:
+  - text: "Beberapa fasilitas yang dimiliki oleh objek wisata Kopeng Treetop Adventure Park adalah sebagai berikut: \n1. Outbond \n2. Zip coaster \n3. Ski ban \n4. Caving \n5. ATV \n6. Pottery \n7. Team building \n8. Restoran "
+
+  utter_fasilitas_eling:
+  - text: "Beberapa fasilitas yang dimiliki oleh objek wisata Eling Bening adalah sebagai berikut: \n1. Restoran \n2. Kolam renang \n3. Taman bunga  \n4. Play Ground  \n5. Area parkir  \n6. Toilet"
+
+  utter_fasilitas_celosia:
+  - text: "Beberapa fasilitas yang dimiliki oleh objek wisata Taman Bunga Celosia adalah sebagai berikut: \n1. Area parkir \n2. Wahana permainan \n3. Spot foto \n4. Gedung Aula pertemuan \n5. Hiburan Musik \n6. Café Garden Celosia \n7. Penyewaan Hanbok dan Kimono \n8. Foto 360 \n9. Penjualan Tanaman Bunga Hias \n10. Food Court "
+
+  utter_fasilitas_ayanaz:
+  - text: "Beberapa fasilitas yang dimiliki oleh objek wisata Ayanaz Gedongsongo adalah sebagai berikut: \n1. Wahana permainan \n2. Toilet \n3. Musholla \n4. Area parkir"
+
+  utter_fasilitas_puri:
+  - text: "Beberapa fasilitas yang dimiliki oleh objek wisata Puri Maerokoco adalah sebagai berikut: \n1. Area parkir \n2. Toilet \n3. Cafe \n4. Musholla \n5. Outbound"
+
+  utter_jamoperasional:
+  - text: "Jam operasional wisata Umbul Sidomukti dimulai dari jam 08.00 pagi sampai dengan jam 18.000 sore. Terima kasih"
+
+  utter_jamoperasional_pinus:
+  - text: "Jam operasional wisata Pinuspark Ungaran dimulai dari jam 08.00 pagi sampai dengan jam 16.00 sore untuk weekdays dan untuk weekend dimulai dari jam 07.00 pagi sampai dengan jam 17.00 sore. Terima kasih"
+
+  utter_jamoperasional_cimoory:
+  - text: "Jam operasional wisata Cimoory Semarang dimulai dari jam 08.00 pagi sampai dengan jam 16.00 sore. Terima kasih"
+
+  utter_jamoperasional_kopeng:
+  - text: "Jam operasional wisata Kopeng Treetop Adventure Park dimulai dari jam 09.00 pagi sampai dengan jam 17.00 sore untuk hari jum at - minggu. dan untuk hari senin sampai kamis objek wisata tutup. terimakasih "
+
+  utter_jamoperasional_eling:
+  - text: "Jam operasional wisata Eling Bening dimulai dari jam 07.00 pagi sampai dengan jam 18.30 malam. Terima kasih"
+
+  utter_jamoperasional_celosia:
+  - text: "Jam operasional objek wisata Taman Bunga Celosia dimulai dari jam 08.00 pagi sampai dengan jam 17.00 sore. Terima kasih"
+
+  utter_jamoperasional_ayanaz:
+  - text: "Jam operasional objek wisata Ayanaz Gedongsongo dimulai dari jam 08.00 pagi sampai dengan jam 17.00 sore. Terima kasih"
+
+  utter_jamoperasional_puri:
+  - text: "Jam operasional objek wisata Puri Maerokoco dimulai dari jam 08.00 pagi sampai dengan jam 18.00 sore. Terima kasih"
+
+  utter_ketentuan:
+  - text: "Terdapat beberapa ketentuan yang harus di patuhi ketika ingin menggunakan moda transportasi BRT Trans Jateng diantaranya adalah : \n==> Dilarang membawa barang berbau menyengat \n==> Dilarang membawa barang berbau menyengat dan berair \n==> Dilarang makan dan minum di dalam bus \n==> Dilarang membawa hewan peliharaan \n==> Dilarang membawa senjata tajam \n==> Dilarang melakukan tindakan asusila"
+    image: "https://fetch.indown.io/stream?expires=1696838651&url=https%3A%2F%2Finstagram.flhe6-1.fna.fbcdn.net%2Fv%2Ft51.2885-15%2F309328647_496653872017405_5804095411031577229_n.webp%3Fstp%3Ddst-jpg_e35%26efg%3DeyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xMDgweDE5MjAuc2RyIn0%26_nc_ht%3Dinstagram.flhe6-1.fna.fbcdn.net%26_nc_cat%3D101%26_nc_ohc%3DhhHmrpQxMfUAX8zWavF%26edm%3DANmP7GQBAAAA%26ccb%3D7-5%26ig_cache_key%3DMjkzNzg1NTY1NzU5MjY3NzMxMA%253D%253D.2-ccb7-5%26oh%3D00_AfBOB9TZeEpjd3E8TEHhqvdn4q7Wi9Yb8mX6eZojsT2Xlg%26oe%3D6524EB00%26_nc_sid%3D982cc7&signature=2ae1d2a66a81bc2b0a7cbddfe4b11d545a67e3cd69f02e85796cea77e464be7d"
+
+  utter_ketentuanbarang:
+  - text: "Berikut adalah ketentuan yang mengenai barang bawaan pada BRT Trans Jateng : \n==> Barang bawaan dengan dimensi rata-rata 50x30x30 cm dikenakan tarif umum bila melebihi dimensi rata - rata"
+    image: "https://fetch.indown.io/stream?expires=1696838651&url=https%3A%2F%2Finstagram.flhe6-1.fna.fbcdn.net%2Fv%2Ft51.2885-15%2F309661282_1040343863306393_3324395368858951480_n.webp%3Fstp%3Ddst-jpg_e35%26efg%3DeyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xMDgweDE5MjAuc2RyIn0%26_nc_ht%3Dinstagram.flhe6-1.fna.fbcdn.net%26_nc_cat%3D105%26_nc_ohc%3DgThNpN0jB8MAX_IIzgG%26edm%3DANmP7GQBAAAA%26ccb%3D7-5%26ig_cache_key%3DMjkzNzg1NTU3MDg2Mjg2MTc5NA%253D%253D.2-ccb7-5%26oh%3D00_AfBzXAjyGTuPd8jsiDlsevquVZBoi9pHSoTHBC2qnz-2bA%26oe%3D6524E04D%26_nc_sid%3D982cc7&signature=28f1f8b03f7252f181407206219c6a8b047147d7742dd137b96cc221d898806d"
+
+  utter_iamabot:
+  - text: "Ya! saya adalah sebuah Bot yang diciptakan oleh Wibowo Adi Saputro. Terima kasih!"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
