@@ -1,0 +1,1656 @@
+version: "3.1"
+
+nlu:
+- intent: sapa
+  examples: |
+    - hey
+    - hai
+    - hei
+    - hi
+    - hello
+    - halo
+    - selamat pagi
+    - selamat siang
+    - selamat sore
+    - selamat malam
+    - Assalamualaikum
+    - permisi
+
+- intent: ya
+  examples: |
+    - ya
+
+- intent: wisata_alam
+  examples: |
+    - ya
+
+- intent: umbul_sidomukti
+  examples: |
+    - umbul sidomukti
+
+- intent: lokasi_umbul
+  examples: |
+    - umbul sidomukti lokasinya dimana?
+    - dimana lokasi umbul ini?
+    - lokasi umbul sidomukti dimana ya?
+    - saya ingin tahu lokasi umbul sidomukti
+    - umbul ini tempatnya dimana?
+    - umbul ini alamatnya dimana?
+    - dimana alamat umbul sidomukti
+    - dimana tempat umbul ini?
+
+- intent: tiketumbulsidomukti
+  examples: |
+    - berapa sih tiket objek wisata umbul sidomukti?
+    - tiket objek wisata umbul sidomukti berapa?
+    - tiket umbul sidomukti
+    - berapa tiket umbul sidomukti?
+    - berapa tiketnya umbul?
+    - saya mau tau tiketnya umbul dong
+    - aku mau tau tiketnya umbul dong
+    - mau tau tiketnya umbul
+    - pengen tau tiketnya umbul
+    - tiketnya umbul berapa aja 
+    - tiketnya umbul berapa?
+
+- intent: fasilitas
+  examples: |
+    - umbul apa saja fasilitasnya?
+    - apa fasilitas di umbul? 
+    - ada fasilitas apa saja di umbul?
+    - fasilitas apa saja yang diberikan umbul?
+    - fasilitas umbul sidomukti apa saja?
+
+- intent: jamoperasional
+  examples: |
+    - jam operasional umbulnya kapan aja ya?
+    - kapan jam operasional umbulnya?
+    - jam opersional wisata umbulnya kapan ya?
+    - jam operasional umbul sidomukti
+    - buka jam berapa umbul nya?
+    - operasional umbul sidomukti
+    - bukanya dari jam berapa umbulnya?
+    - jam berapa wisata umbulnya buka?
+    - jam berapa wisata umbulnya open?
+    - open jam berapa wisata umbulnya?
+    - umbul sidomukti buka jam berapa ya?
+
+- intent: pinuspark_ungaran
+  examples: |
+    - pinuspark ungaran
+
+- intent: lokasi_pinus
+  examples: |
+    - pinus park lokasinya dimana?
+    - lokasi pinuspark dimana ya?
+    - saya ingin tahu lokasi pinus park ungaran?
+    - pinuspark ini tempatnya dimana?
+    - pinuspark alamatnya dimana?
+    - dimana alamat pinuspark?
+    - dimana tempat pinuspark ini?
+  
+- intent: tiketpinusparkungaran
+  examples: |
+    - berapa sih tiket objek wisata pinuspark ungaran?
+    - tiket objek wisata pinuspark ungaran berapa?
+    - tiket pinuspark ungaran
+    - berapa tiket pinuspark??
+    - berapa tiketnya?
+    - saya mau tau tiket pinuspark dong
+    - aku mau tau tiket pinuspark dong
+    - mau tau tiketnya pinuspark
+    - pengen tau tiketnya pinuspark
+    - tiketnya pinuspark berapa aja 
+    - tiketnyanya pinuspark berapa?
+
+- intent: fasilitas_pinus
+  examples: |
+    - pinuspark apa saja fasilitasnya?
+    - apa fasilitas di pinuspark? 
+    - ada fasilitas apa saja di pinuspark?
+    - fasilitas apa saja yang diberikan pinuspark?
+    - fasilitas pinuspark ungaran apa saja?
+
+- intent: jamoperasional_pinus
+  examples: |
+    - jam operasional pinusparknya kapan aja ya?
+    - kapan jam operasional pinusparknya?
+    - jam opersional wisata pinusparknya kapan ya?
+    - jam operasional pinuspark ungaran
+    - buka jam berapa pinuspark nya?
+    - operasional pinuspark ungaran
+    - bukanya dari jam berapa pinusparknya?
+    - jam berapa wisata pinusparknya buka?
+    - jam berapa wisata pinusparknya open?
+    - open jam berapa wisata pinusparknya?
+    - pinusparknya buka jam berapa ya?
+
+- intent: cimoory
+  examples: |
+    - cimoory
+
+- intent: lokasi_cimoory
+  examples: |
+    - cimoory lokasinya dimana?
+    - lokasi cimoory dimana ya?
+    - saya ingin tahu lokasi cimoory semarang?
+    - cimoory ini tempatnya dimana?
+    - cimoory alamatnya dimana?
+    - dimana alamat cimoory?
+    - dimana tempat cimoory ini?
+
+- intent: tiketcimoorysemarang
+  examples: |
+    - berapa sih tiket objek wisata cimoory semarang?
+    - tiket objek wisata cimoory semarang berapa?
+    - tiket cimoory semarang
+    - berapa tiket cimoory?
+    - berapa tiket cimoorynya?
+    - saya mau tau tiket cimoory dong
+    - aku mau tau tiket cimoory dong
+    - mau tau tiketnya cimoory
+    - pengen tau tiketnya cimoory
+    - tiketnya cimoory berapa aja 
+    - tiketnyanya cimoory berapa?
+
+- intent: fasilitas_cimoory
+  examples: |
+    - cimoory apa saja fasilitasnya?
+    - apa fasilitas di cimoory? 
+    - ada fasilitas apa saja di cimoory?
+    - fasilitas apa saja yang diberikan cimoory?
+    - fasilitas cimoory semarang apa saja?
+  
+- intent: jamoperasional_cimoory
+  examples: |
+    - jam operasional cimoory kapan aja ya?
+    - kapan jam operasional cimoory?
+    - jam opersional wisata cimoorynya kapan ya?
+    - jam operasional cimoory semarang
+    - buka jam berapa cimoory nya?
+    - operasional cimoory semarang
+    - bukanya dari jam berapa cimoorynya?
+    - jam berapa wisata cimoorynya buka?
+    - jam berapa wisata cimoorynya open?
+    - open jam berapa wisata cimoorynya?
+    - cimoory semarang buka jam berapa ya?
+
+- intent: kopeng_treetop_adventure_park
+  examples: |
+    - kopeng treetop adventure park
+  
+- intent: lokasi_kopeng
+  examples: |
+    - kopeng lokasinya dimana?
+    - lokasi kopeng dimana ya?
+    - saya ingin tahu lokasi kopeng treetop adventure park?
+    - kopeng ini tempatnya dimana?
+    - kopeng alamatnya dimana?
+    - dimana alamat kopeng?
+    - dimana tempat kopeng ini?
+
+- intent: tiketkopeng
+  examples: |
+    - berapa sih tiket objek wisata kopeng adventure?
+    - tiket objek wisata kopeng adventure berapa?
+    - tiket kopeng adventure
+    - berapa tiket kopeng?
+    - berapa tiket kopengnya?
+    - saya mau tau tiket kopeng dong
+    - aku mau tau tiket kopeng dong
+    - mau tau tiketnya kopeng
+    - pengen tau tiketnya kopeng
+    - tiketnya kopeng berapa aja 
+    - tiketnyanya kopeng berapa?
+
+- intent: fasilitas_kopeng
+  examples: |
+    - kopeng apa saja fasilitasnya?
+    - apa fasilitas di kopeng? 
+    - ada fasilitas apa saja di kopeng?
+    - fasilitas apa saja yang diberikan kopeng?
+    - fasilitas kopeng semarang apa saja?
+
+- intent: jamoperasional_kopeng
+  examples: |
+    - jam operasional kopeng kapan aja ya?
+    - kapan jam operasional kopeng?
+    - jam opersional wisata kopengnya kapan ya?
+    - jam operasional kopeng semarang
+    - buka jam berapa kopeng nya?
+    - operasional kopeng semarang
+    - bukanya dari jam berapa kopengnya?
+    - jam berapa wisata kopengnya buka?
+    - jam berapa wisata kopengnya open?
+    - open jam berapa wisata kopengnya?
+    - kopeng treetop adventure buka jam berapa ya?
+
+- intent: eling_bening
+  examples: |
+    - Eling Bening
+  
+- intent: lokasi_eling
+  examples: |
+    - eling bening lokasinya dimana?
+    - lokasi eling bening dimana ya?
+    - saya ingin tahu lokasi eling bening?
+    - eling bening ini tempatnya dimana?
+    - eling bening alamatnya dimana?
+    - dimana alamat eling bening?
+    - dimana tempat eling bening ini?
+
+- intent: tiketelingbening
+  examples: |
+    - berapa sih tiket objek wisata eling bening?
+    - tiket objek wisata eling bening berapa?
+    - tiket eling bening
+    - berapa tiket eling bening?
+    - berapa tiket eling beningnya?
+    - saya mau tau tiket eling bening dong
+    - aku mau tau tiket eling bening dong
+    - mau tau tiketnya eling bening
+    - pengen tau tiketnya eling bening
+    - tiketnya eling bening berapa aja 
+    - tiketnyanya eling bening berapa?
+
+- intent: fasilitas_eling
+  examples: |
+    - eling bening apa saja fasilitasnya?
+    - apa fasilitas di eling bening? 
+    - ada fasilitas apa saja di eling bening?
+    - fasilitas apa saja yang diberikan eling bening?
+    - fasilitas eling bening apa saja?
+
+- intent: jamoperasional_eling
+  examples: |
+    - jam operasional eling kapan aja ya?
+    - kapan jam operasional eling?
+    - jam opersional wisata elingnya kapan ya?
+    - jam operasional eling bening
+    - buka jam berapa eling nya?
+    - operasional eling bening
+    - bukanya dari jam berapa elingnya?
+    - jam berapa wisata elingnya buka?
+    - jam berapa wisata elingnya open?
+    - open jam berapa wisata elingnya?
+    - eling bening buka jam berapa ya?
+
+- intent: taman_bunga_celosia
+  examples: |
+    - taman bunga celosia
+
+- intent: lokasi_celosia
+  examples: |
+    - taman bunga lokasinya dimana?
+    - lokasi taman bunga dimana ya?
+    - saya ingin tahu lokasi taman bunga celosia?
+    - taman bunga ini tempatnya dimana?
+    - taman bunga celosia alamatnya dimana?
+    - dimana alamat taman bunga?
+    - dimana tempat taman bunga ini?
+
+- intent: tikettamanbunga
+  examples: |
+    - berapa sih tiket objek wisata taman bunga celosia?
+    - tiket objek wisata taman bunga celosia berapa?
+    - tiket taman bunga celosia
+    - berapa tiket taman bunga celosia?
+    - berapa tiket taman bunga celosia nya?
+    - saya mau tau tiket taman bunga celosia dong
+    - aku mau tau tiket taman bunga celosia dong
+    - mau tau tiketnya taman bunga celosia
+    - pengen tau tiketnya taman bunga celosia
+    - tiketnya taman bunga celosia berapa aja 
+    - tiketnyanya taman bunga celosia berapa?
+
+- intent: fasilitas_celosia
+  examples: |
+    - taman bunga celosia apa saja fasilitasnya?
+    - apa fasilitas di taman bunga celosia? 
+    - ada fasilitas apa saja di taman bunga celosia?
+    - fasilitas apa saja yang diberikan taman bunga celosia?
+    - fasilitas taman bunga celosia apa saja?
+
+- intent: jamoperasional_celosia
+  examples: |
+    - jam operasional taman bunga celosia kapan aja ya?
+    - kapan jam operasional taman bunga celosia?
+    - jam opersional wisata taman bunga celosia nya kapan ya?
+    - jam operasional taman bunga celosia
+    - buka jam berapa taman bunga celosia nya?
+    - operasional taman bunga celosia
+    - bukanya dari jam berapa taman bunga celosia nya?
+    - jam berapa wisata taman bunga celosia nya buka?
+    - jam berapa wisata taman bunga celosia nya open?
+    - open jam berapa wisata taman bunga nya?
+    - taman bunga celosia buka jam berapa ya?
+
+- intent: ayanaz_gedong_songo
+  examples: |
+    - ayanaz gedong songo
+
+- intent: lokasi_ayanaz
+  examples: |
+    - ayanaz gedongsongo lokasinya dimana?
+    - lokasi ayanaz gedongsongo dimana ya?
+    - saya ingin tahu lokasi ayanaz gedongsongo?
+    - ayanaz gedongsongo ini tempatnya dimana?
+    - ayanaz gedongsongo alamatnya dimana?
+    - dimana alamat ayanaz gedongsongo?
+    - dimana tempat ayanaz gedongsongo ini?
+
+- intent: tiketayanaz
+  examples: |
+    - berapa sih tiket objek wisata ayanaz gedongsongo?
+    - tiket objek wisata ayanaz gedongsongo berapa?
+    - tiket ayanaz gedongsongo
+    - berapa tiket ayanaz gedongsongo?
+    - berapa tiket ayanaz gedongsongo nya?
+    - saya mau tau tiket ayanaz gedongsongo dong
+    - aku mau tau tiket ayanaz gedongsongo dong
+    - mau tau tiketnya ayanaz gedongsongo
+    - pengen tau tiketnya ayanaz gedongsongo
+    - tiketnya ayanaz gedongsongo berapa aja 
+    - tiketnyanya ayanaz gedongsongo berapa?
+
+- intent: fasilitas_ayanaz
+  examples: |
+    - ayanaz gedongsongo apa saja fasilitasnya?
+    - apa fasilitas di ayanaz gedongsongo? 
+    - ada fasilitas apa saja di ayanaz gedongsongo?
+    - fasilitas apa saja yang diberikan ayanaz gedongsongo?
+    - fasilitas ayanaz gedongsongo apa saja?
+
+- intent: jamoperasional_ayanaz
+  examples: |
+    - jam operasional ayanaz kapan aja ya?
+    - kapan jam operasional ayanaz gedong songo?
+    - jam opersional wisata ayanaz nya kapan ya?
+    - jam operasional ayanaz
+    - buka jam berapa ayanaz gedong songo nya?
+    - operasional ayanaz gedong songo
+    - bukanya dari jam berapa ayanaz gedong songo nya?
+    - jam berapa wisata ayanaz gedongsongo nya buka?
+    - jam berapa wisata ayanaz gedongsongo nya open?
+    - open jam berapa wisata ayanaz gedongsongo nya?
+    - ayanaz gedongsongo buka jam berapa ya?
+
+- intent: puri_maerokoco
+  examples: | 
+    - puri maerokoco
+
+- intent: lokasi_puri
+  examples: |
+    - puri maerokoco lokasinya dimana?
+    - lokasi puri maerokoco dimana ya?
+    - saya ingin tahu lokasi puri maerokoco?
+    - puri maerokoco ini tempatnya dimana?
+    - puri maerokoco alamatnya dimana?
+    - dimana alamat puri maerokoco?
+    - dimana tempat puri maerokoco ini?
+
+- intent: tiketpuri
+  examples: |
+    - berapa sih tiket objek wisata puri maerokoco?
+    - tiket objek wisata puri maerokoco berapa?
+    - tiket puri maerokoco
+    - berapa tiket puri maerokoco?
+    - berapa tiket puri maerokoco nya?
+    - saya mau tau tiket puri maerokoco dong
+    - aku mau tau tiket puri maerokoco dong
+    - mau tau tiketnya puri maerokoco
+    - pengen tau tiketnya puri maerokoco
+    - tiketnya puri maerokoco berapa aja 
+    - tiketnyanya puri maerokoco berapa?
+
+- intent: fasilitas_puri
+  examples: |
+    - puri maerokoco apa saja fasilitasnya?
+    - apa fasilitas di puri maerokoco? 
+    - ada fasilitas apa saja di puri maerokoco?
+    - fasilitas apa saja yang diberikan puri maerokoco?
+    - fasilitas puri maerokoco apa saja?
+
+- intent: jamoperasional_puri
+  examples: |
+    - jam operasional puri maerokoco kapan aja ya?
+    - kapan jam operasional puri maerokoco?
+    - jam opersional wisata puri maerokoco nya kapan ya?
+    - jam operasional puri maerokoco
+    - buka jam berapa puri maerokoco nya?
+    - operasional puri maerokoco
+    - bukanya dari jam berapa puri maerokoco nya?
+    - jam berapa wisata puri maerokoco nya buka?
+    - jam berapa wisata puri maerokoco nya open?
+    - open jam berapa wisata puri maerokoco nya?
+    - puri maerokoco buka jam berapa ya?
+
+- intent: wisata_pantai
+  examples: |
+    - ya
+
+- intent: pantai_marina
+  examples: |
+    - ya
+
+- intent: lokasi_pantai_marina
+  examples: |
+    - pantai marina lokasinya dimana?
+    - lokasi pantai marina dimana ya?
+    - saya ingin tahu lokasi pantai marina?
+    - pantai marina ini tempatnya dimana?
+    - pantai marina alamatnya dimana?
+    - dimana alamat pantai marina?
+    - dimana tempat pantai marina ini?
+
+- intent: tiket_pantai_marina
+  examples: |
+    - berapa sih tiket objek wisata pantai marina?
+    - tiket objek wisata pantai marina berapa?
+    - tiket pantai marina
+    - berapa tiket pantai marina?
+    - berapa tiket pantai marina nya?
+    - saya mau tau tiket pantai marina dong
+    - aku mau tau tiket pantai marina dong
+    - mau tau tiketnya pantai marina
+    - pengen tau tiketnya pantai marina
+    - tiketnya pantai marina berapa aja 
+    - tiketnyanya pantai marina berapa?
+
+- intent: fasilitas_pantai_marina
+  examples: |
+    - pantai marina apa saja fasilitasnya?
+    - apa fasilitas di pantai marina? 
+    - ada fasilitas apa saja di pantai marina?
+    - fasilitas apa saja yang diberikan pantai marina?
+    - fasilitas pantai marina apa saja?
+
+- intent: jamoperasional_pantai_marina
+  examples: |
+    - jam operasional pantai marina kapan aja ya?
+    - kapan jam operasional pantai marina?
+    - jam opersional wisata pantai marina nya kapan ya?
+    - jam operasional pantai marina
+    - buka jam berapa pantai marina nya?
+    - operasional pantai marina
+    - bukanya dari jam berapa pantai marina nya?
+    - jam berapa wisata pantai marina nya buka?
+    - jam berapa wisata pantai marina nya open?
+    - open jam berapa wisata pantai marina nya?
+    - pantai marina buka jam berapa ya?
+  
+- intent: pantai_baruna
+  examples: |
+    - ya
+
+- intent: lokasi_pantai_baruna
+  examples: |
+    - pantai baruna lokasinya dimana?
+    - lokasi pantai baruna dimana ya?
+    - saya ingin tahu lokasi pantai baruna?
+    - pantai baruna ini tempatnya dimana?
+    - pantai baruna alamatnya dimana?
+    - dimana alamat pantai baruna?
+    - dimana tempat pantai baruna ini?
+
+- intent: tiket_pantai_baruna
+  examples: |
+    - berapa sih tiket objek wisata pantai baruna?
+    - tiket objek wisata pantai baruna berapa?
+    - tiket pantai baruna
+    - berapa tiket pantai baruna?
+    - berapa tiket pantai baruna nya?
+    - saya mau tau tiket pantai baruna dong
+    - aku mau tau tiket pantai baruna dong
+    - mau tau tiketnya pantai baruna
+    - pengen tau tiketnya pantai baruna
+    - tiketnya pantai baruna berapa aja 
+    - tiketnyanya pantai baruna berapa?
+
+- intent: fasilitas_pantai_baruna
+  examples: |
+    - pantai baruna apa saja fasilitasnya?
+    - apa fasilitas di pantai baruna? 
+    - ada fasilitas apa saja di pantai baruna?
+    - fasilitas apa saja yang diberikan pantai baruna?
+    - fasilitas pantai baruna apa saja?
+
+- intent: jamoperasional_pantai_baruna
+  examples: |
+    - jam operasional pantai baruna kapan aja ya?
+    - kapan jam operasional pantai baruna?
+    - jam opersional wisata pantai baruna nya kapan ya?
+    - jam operasional pantai baruna
+    - buka jam berapa pantai baruna nya?
+    - operasional pantai baruna
+    - bukanya dari jam berapa pantai baruna nya?
+    - jam berapa wisata pantai baruna nya buka?
+    - jam berapa wisata pantai baruna nya open?
+    - open jam berapa wisata pantai baruna nya?
+    - pantai baruna buka jam berapa ya?
+
+- intent: pantai_cipta
+  examples: |
+    - ya
+
+- intent: lokasi_pantai_cipta
+  examples: |
+    - pantai cipta lokasinya dimana?
+    - lokasi pantai cipta dimana ya?
+    - saya ingin tahu lokasi pantai cipta?
+    - pantai cipta ini tempatnya dimana?
+    - pantai cipta alamatnya dimana?
+    - dimana alamat pantai cipta?
+    - dimana tempat pantai cipta ini?
+
+- intent: tiket_pantai_cipta
+  examples: |
+    - berapa sih tiket objek wisata pantai cipta?
+    - tiket objek wisata pantai cipta berapa?
+    - tiket pantai cipta
+    - berapa tiket pantai cipta?
+    - berapa tiket pantai cipta nya?
+    - saya mau tau tiket pantai cipta dong
+    - aku mau tau tiket pantai cipta dong
+    - mau tau tiketnya pantai cipta
+    - pengen tau tiketnya pantai cipta
+    - tiketnya pantai cipta berapa aja 
+    - tiketnyanya pantai cipta berapa?
+
+- intent: fasilitas_pantai_cipta
+  examples: |
+    - pantai cipta apa saja fasilitasnya?
+    - apa fasilitas di pantai cipta? 
+    - ada fasilitas apa saja di pantai cipta?
+    - fasilitas apa saja yang diberikan pantai cipta?
+    - fasilitas pantai cipta apa saja?
+
+- intent: jamoperasional_pantai_cipta
+  examples: |
+    - jam operasional pantai cipta kapan aja ya?
+    - kapan jam operasional pantai cipta?
+    - jam opersional wisata pantai cipta nya kapan ya?
+    - jam operasional pantai cipta
+    - buka jam berapa pantai cipta nya?
+    - operasional pantai cipta
+    - bukanya dari jam berapa pantai cipta nya?
+    - jam berapa wisata pantai cipta nya buka?
+    - jam berapa wisata pantai cipta nya open?
+    - open jam berapa wisata pantai cipta nya?
+    - pantai cipta buka jam berapa ya?
+
+- intent: pantai_tirang
+  examples: |
+    - ya
+
+- intent: lokasi_pantai_tirang
+  examples: |
+    - pantai tirang lokasinya dimana?
+    - lokasi pantai tirang dimana ya?
+    - saya ingin tahu lokasi pantai tirang?
+    - pantai tirang ini tempatnya dimana?
+    - pantai tirang alamatnya dimana?
+    - dimana alamat pantai tirang?
+    - dimana tempat pantai tirang ini?
+
+- intent: tiket_pantai_tirang
+  examples: |
+    - berapa sih tiket objek wisata pantai tirang?
+    - tiket objek wisata pantai tirang berapa?
+    - tiket pantai tirang
+    - berapa tiket pantai tirang?
+    - berapa tiket pantai tirang nya?
+    - saya mau tau tiket pantai tirang dong
+    - aku mau tau tiket pantai tirang dong
+    - mau tau tiketnya pantai tirang
+    - pengen tau tiketnya pantai tirang
+    - tiketnya pantai tirang berapa aja 
+    - tiketnyanya pantai tirang berapa?
+
+- intent: fasilitas_pantai_tirang
+  examples: |
+    - pantai tirang apa saja fasilitasnya?
+    - apa fasilitas di pantai tirang? 
+    - ada fasilitas apa saja di pantai tirang?
+    - fasilitas apa saja yang diberikan pantai tirang?
+    - fasilitas pantai tirang apa saja?
+
+- intent: jamoperasional_pantai_tirang
+  examples: |
+    - jam operasional pantai tirang kapan aja ya?
+    - kapan jam operasional pantai tirang?
+    - jam opersional wisata pantai tirang nya kapan ya?
+    - jam operasional pantai tirang
+    - buka jam berapa pantai tirang nya?
+    - operasional pantai tirang
+    - bukanya dari jam berapa pantai tirang nya?
+    - jam berapa wisata pantai tirang nya buka?
+    - jam berapa wisata pantai tirang nya open?
+    - open jam berapa wisata pantai tirang nya?
+    - pantai tirang buka jam berapa ya?
+
+- intent: pantai_maron
+  examples: |
+    - ya
+
+- intent: lokasi_pantai_maron
+  examples: |
+    - pantai maron lokasinya dimana?
+    - lokasi pantai maron dimana ya?
+    - saya ingin tahu lokasi pantai maron?
+    - pantai maron ini tempatnya dimana?
+    - pantai maron alamatnya dimana?
+    - dimana alamat pantai maron?
+    - dimana tempat pantai maron ini?
+
+- intent: tiket_pantai_maron
+  examples: |
+    - berapa sih tiket objek wisata pantai maron?
+    - tiket objek wisata pantai maron berapa?
+    - tiket pantai maron
+    - berapa tiket pantai maron?
+    - berapa tiket pantai maron nya?
+    - saya mau tau tiket pantai maron dong
+    - aku mau tau tiket pantai maron dong
+    - mau tau tiketnya pantai maron
+    - pengen tau tiketnya pantai maron
+    - tiketnya pantai maron berapa aja 
+    - tiketnyanya pantai maron berapa?
+
+- intent: fasilitas_pantai_maron
+  examples: |
+    - pantai maron apa saja fasilitasnya?
+    - apa fasilitas di pantai maron? 
+    - ada fasilitas apa saja di pantai maron?
+    - fasilitas apa saja yang diberikan pantai maron?
+    - fasilitas pantai maron apa saja?
+
+- intent: jamoperasional_pantai_maron
+  examples: |
+    - jam operasional pantai maron kapan aja ya?
+    - kapan jam operasional pantai maron?
+    - jam opersional wisata pantai maron nya kapan ya?
+    - jam operasional pantai maron
+    - buka jam berapa pantai maron nya?
+    - operasional pantai maron
+    - bukanya dari jam berapa pantai maron nya?
+    - jam berapa wisata pantai maron nya buka?
+    - jam berapa wisata pantai maron nya open?
+    - open jam berapa wisata pantai maron nya?
+    - pantai maron buka jam berapa ya?
+
+- intent: wisata_religi
+  examples: |
+    - ya
+
+- intent: klenteng_sam_poo_kong
+  examples: |
+    - ya
+
+- intent: lokasi_klenteng
+  examples: |
+    - klenteng sam poo kong lokasinya dimana?
+    - lokasi klenteng sam poo kong dimana ya?
+    - saya ingin tahu lokasi klenteng sam poo kong?
+    - klenteng sam poo kong ini tempatnya dimana?
+    - klenteng sam poo kong alamatnya dimana?
+    - dimana alamat klenteng sam poo kong?
+    - dimana tempat klenteng sam poo kong ini?
+
+- intent: tiket_klenteng
+  examples: |
+    - berapa sih tiket objek wisata klenteng sam poo kong?
+    - tiket objek wisataklenteng sam poo kong berapa?
+    - tiket klenteng sam poo kong
+    - berapa tiket klenteng sam poo kong?
+    - berapa tiket klenteng sam poo kong nya?
+    - saya mau tau tiket klenteng sam poo kong dong
+    - aku mau tau tiket klenteng sam poo kong dong
+    - mau tau tiketnya klenteng sam poo kong
+    - pengen tau tiketnya klenteng sam poo kong
+    - tiketnya klenteng sam poo kong berapa aja 
+    - tiketnyanya klenteng sam poo kong berapa?
+
+- intent: fasilitas_klenteng
+  examples: |
+    - klenteng sam poo kong apa saja fasilitasnya?
+    - apa fasilitas di klenteng sam poo kong? 
+    - ada fasilitas apa saja di klenteng sam poo kong?
+    - fasilitas apa saja yang diberikan klenteng sam poo kong?
+    - fasilitas klenteng sam poo kong apa saja?
+
+- intent: jamoperasional_klenteng
+  examples: |
+    - jam operasional klenteng sam poo kong kapan aja ya?
+    - kapan jam operasional klenteng sam poo kong?
+    - jam opersional wisata klenteng sam poo kong nya kapan ya?
+    - jam operasional klenteng sam poo kong
+    - buka jam berapa klenteng sam poo kong nya?
+    - operasional klenteng sam poo kong
+    - bukanya dari jam berapa klenteng sam poo kong nya?
+    - jam berapa wisata klenteng sam poo kong nya buka?
+    - jam berapa wisata klenteng sam poo kong nya open?
+    - open jam berapa wisata klenteng sam poo kong nya?
+    - klenteng sam poo kong buka jam berapa ya?
+
+- intent: masjid_agung_semarang
+  examples: |
+    - ya
+
+- intent: lokasi_masjid_agung
+  examples: |
+    - masjid agung jawa tengah lokasinya dimana?
+    - lokasi masjid agung jawa tengah dimana ya?
+    - saya ingin tahu lokasi masjid agung jawa tengah?
+    - masjid agung jawa tengah ini tempatnya dimana?
+    - masjid agung jawa tengah alamatnya dimana?
+    - dimana alamat masjid agung jawa tengah?
+    - dimana tempat masjid agung jawa tengah ini?
+
+- intent: tiket_masjidagung
+  examples: |
+    - berapa sih tiket objek wisata masjid agung jawa tengah?
+    - tiket objek wisata masjid agung jawa tengah berapa?
+    - tiket masjid agung jawa tengah
+    - berapa tiket masjid agung jawa tengah?
+    - berapa tiket masjid agung jawa tengah nya?
+    - saya mau tau tiket masjid agung jawa tengah dong
+    - aku mau tau tiket masjid agung jawa tengah dong
+    - mau tau tiketnya masjid agung jawa tengah
+    - pengen tau tiketnya masjid agung jawa tengah
+    - tiketnya masjid agung jawa tengah berapa aja 
+    - tiketnyanya masjid agung jawa tengah berapa?
+
+- intent: fasilitas_masjid_agung
+  examples: |
+    - masjid agung jawa tengah apa saja fasilitasnya?
+    - apa fasilitas di masjid agung jawa tengah? 
+    - ada fasilitas apa saja di masjid agung jawa tengah?
+    - fasilitas apa saja yang diberikan masjid agung jawa tengah?
+    - fasilitas masjid agung jawa tengah apa saja?
+
+- intent: jamoperasional_masjid_agung
+  examples: |
+    - jam operasional masjid agung jawa tengah kapan aja ya?
+    - kapan jam operasional masjid agung jawa tengah?
+    - jam opersional wisata masjid agung jawa tengahg nya kapan ya?
+    - jam operasional masjid agung jawa tengah
+    - buka jam berapa masjid agung jawa tengah nya?
+    - operasional masjid agung jawa tengah
+    - bukanya dari jam berapa masjid agung jawa tengah nya?
+    - jam berapa wisata masjid agung jawa tengah nya buka?
+    - jam berapa wisata masjid agung jawa tengah nya open?
+    - open jam berapa wisata masjid agung jawa tengah nya?
+    - masjid agung jawa tengah buka jam berapa ya?
+
+- intent: masjid_kapal_semarang
+  examples: |
+    - ya
+
+- intent: lokasi_masjid_kapal
+  examples: |
+    - masjid kapal semarang lokasinya dimana?
+    - lokasi masjid kapal semarang dimana ya?
+    - saya ingin tahu lokasi masjid kapal semarang?
+    - masjid kapal semarang ini tempatnya dimana?
+    - masjid kapal semarang alamatnya dimana?
+    - dimana alamat masjid kapal semarang?
+    - dimana tempat masjid kapal semarang ini?
+
+- intent: tiket_masjid_kapal
+  examples: |
+    - berapa sih tiket objek wisata masjid kapal semarang?
+    - tiket objek wisata masjid kapal semarang berapa?
+    - tiket masjid kapal semarang
+    - berapa tiket masjid kapal semarang?
+    - berapa tiket masjid kapal semarang nya?
+    - saya mau tau tiket masjid kapal semarang dong
+    - aku mau tau tiket masjid kapal semarang dong
+    - mau tau tiketnya masjid kapal semarang
+    - pengen tau tiketnya masjid kapal semarang
+    - tiketnya masjid kapal semarang berapa aja 
+    - tiketnyanya masjid kapal semarang berapa?
+
+- intent: fasilitas_masjid_kapal
+  examples: |
+    - masjid kapal semarang apa saja fasilitasnya?
+    - apa fasilitas di masjid kapal semarang? 
+    - ada fasilitas apa saja dimasjid kapal semarang?
+    - fasilitas apa saja yang diberikan masjid kapal semarang?
+    - fasilitas masjid kapal semarang apa saja?
+
+- intent: jamoperasional_masjid_kapal
+  examples: |
+    - jam operasional masjid kapal semarang kapan aja ya?
+    - kapan jam operasional masjid kapal semarang?
+    - jam opersional wisata masjid kapal semarang nya kapan ya?
+    - jam operasional  masjid kapal semarang
+    - buka jam berapa  masjid kapal semarang nya?
+    - operasional masjid kapal semarang
+    - bukanya dari jam berapa masjid kapal semarang nya?
+    - jam berapa wisata  masjid kapal semarang nya buka?
+    - jam berapa wisata masjid kapal semarang nya open?
+    - open jam berapa wisata masjid kapal semarang nya?
+    - masjid kapal semarang buka jam berapa ya?
+
+- intent: pura_agung_girinatha
+  examples: |
+    - ya
+
+- intent: lokasi_pura
+  examples: |
+    - pura agung giri natha lokasinya dimana?
+    - lokasi pura agung giri natha dimana ya?
+    - saya ingin tahu lokasi pura agung giri natha?
+    - pura agung giri natha ini tempatnya dimana?
+    - pura agung giri natha alamatnya dimana?
+    - dimana alamat pura agung giri natha?
+    - dimana tempat pura agung giri natha ini?
+
+- intent: tiket_pura
+  examples: |
+    - berapa sih tiket objek wisata pura agung giri natha?
+    - tiket objek wisata pura agung giri natha?
+    - tiket pura agung giri natha
+    - berapa tiketpura agung giri natha?
+    - berapa tiket pura agung giri natha nya?
+    - saya mau tau tiket pura agung giri natha dong
+    - aku mau tau tiket pura agung giri natha dong
+    - mau tau tiketnya pura agung giri natha
+    - pengen tau tiketnya pura agung giri natha
+    - tiketnya pura agung giri natha berapa aja 
+    - tiketnyanya pura agung giri natha berapa?
+
+- intent: fasilitas_pura
+  examples: |
+    - pura agung giri natha apa saja fasilitasnya?
+    - apa fasilitas di pura agung giri natha? 
+    - ada fasilitas apa saja di pura agung giri natha?
+    - fasilitas apa saja yang diberikan pura agung giri natha?
+    - fasilitas pura agung giri natha apa saja?
+
+- intent: jamoperasional_pura
+  examples: |
+    - jam operasional pura agung giri natha kapan aja ya?
+    - kapan jam operasional pura agung giri natha?
+    - jam opersional wisata pura agung giri natha nya kapan ya?
+    - jam operasional pura agung giri natha
+    - buka jam berapa pura agung giri natha nya?
+    - operasional pura agung giri natha
+    - bukanya dari jam berapa pura agung giri natha nya?
+    - jam berapa wisata pura agung giri natha nya buka?
+    - jam berapa wisata pura agung giri natha nya open?
+    - open jam berapa wisata pura agung giri natha nya?
+    - pura agung giri natha buka jam berapa ya?
+
+- intent: pagoda_avolakitesvara
+  examples: |
+    - ya
+
+- intent: lokasi_pagoda
+  examples: |
+    - pagoda avolakitesvara lokasinya dimana?
+    - lokasi pagoda avolakitesvara dimana ya?
+    - saya ingin tahu lokasi pagoda avolakitesvara?
+    - pagoda avolakitesvara ini tempatnya dimana?
+    - pagoda avolakitesvara alamatnya dimana?
+    - dimana alamat pagoda avolakitesvara?
+    - dimana tempat pagoda avolakitesvara ini?
+
+- intent: tiket_pagoda
+  examples: |
+    - berapa sih tiket objek wisata pagoda avolakitesvara?
+    - tiket objek wisata pagoda avolakitesvara?
+    - tiket pagoda avolakitesvara
+    - berapa tiket pagoda avolakitesvara?
+    - berapa tiket pagoda avolakitesvara nya?
+    - saya mau tau tiket pagoda avolakitesvara dong
+    - aku mau tau tiket pagoda avolakitesvara dong
+    - mau tau tiketnya pagoda avolakitesvara
+    - pengen tau tiketnya pagoda avolakitesvara
+    - tiketnya pagoda avolakitesvara berapa aja 
+    - tiketnyanya pagoda avolakitesvara berapa?
+
+- intent: fasilitas_pagoda
+  examples: |
+    - pagoda avolakitesvara apa saja fasilitasnya?
+    - apa fasilitas di pagoda avolakitesvara? 
+    - ada fasilitas apa saja di pagoda avolakitesvara?
+    - fasilitas apa saja yang diberikan pagoda avolakitesvara?
+    - fasilitas pagoda avolakitesvara apa saja?
+
+- intent: jamoperasional_pagoda
+  examples: |
+    - jam operasional pagoda avolakitesvara kapan aja ya?
+    - kapan jam operasional pagoda avolakitesvara?
+    - jam opersional wisata pagoda avolakitesvara nya kapan ya?
+    - jam operasional pagoda avolakitesvara
+    - buka jam berapa pagoda avolakitesvara nya?
+    - operasional pagoda avolakitesvara
+    - bukanya dari jam berapa pagoda avolakitesvara nya?
+    - jam berapa wisata pagoda avolakitesvara nya buka?
+    - jam berapa wisata pagoda avolakitesvara nya open?
+    - open jam berapa wisata pagoda avolakitesvara nya?
+    - pagoda avolakitesvara buka jam berapa ya?
+
+- intent: wisata_hiburan
+  examples: |
+    - ya
+
+- intent: saloka
+  examples: |
+    - ya
+
+- intent: lokasi_saloka
+  examples: |
+    - saloka theme park lokasinya dimana?
+    - lokasi saloka theme park dimana ya?
+    - saya ingin tahu lokasi saloka theme park?
+    - saloka theme park ini tempatnya dimana?
+    - saloka theme park alamatnya dimana?
+    - dimana alamat saloka theme park?
+    - dimana tempat saloka theme park ini?
+    - saloka lokasi
+
+- intent: tiket_saloka
+  examples: |
+    - berapa sih tiket objek wisata saloka theme park?
+    - tiket objek wisata saloka theme park?
+    - tiket saloka theme park
+    - berapa tiket saloka theme park?
+    - berapa tiket saloka theme park nya?
+    - saya mau tau tiket saloka theme park dong
+    - aku mau tau tiket saloka theme park dong
+    - mau tau tiketnya saloka theme park
+    - pengen tau tiketnya saloka theme park
+    - tiketnya saloka theme park berapa aja 
+    - tiketnyanya saloka theme park berapa?
+    - tiket saloka
+
+- intent: fasilitas_saloka
+  examples: |
+    - saloka theme park apa saja fasilitasnya?
+    - apa fasilitas di saloka theme park? 
+    - ada fasilitas apa saja di saloka theme park?
+    - fasilitas apa saja yang diberikan saloka theme park?
+    - fasilitas saloka theme park apa saja?
+    - fasilitas saloka
+
+- intent: jamoperasional_saloka
+  examples: |
+    - jam operasional saloka theme park kapan aja ya?
+    - kapan jam operasional saloka theme park?
+    - jam opersional wisata saloka theme park nya kapan ya?
+    - jam operasional saloka theme park
+    - buka jam berapa saloka theme park nya?
+    - operasional saloka theme park
+    - bukanya dari jam berapa saloka theme park nya?
+    - jam berapa wisata saloka theme park nya buka?
+    - jam berapa wisata saloka theme park nya open?
+    - open jam berapa wisata saloka theme park nya?
+    - saloka theme park buka jam berapa ya?
+    - buka saloka
+    - jam operasional saloka
+
+- intent: dusun_semilir
+  examples: |
+    - ya
+
+- intent: lokasi_dusun_semilir
+  examples: |
+    - dusun semilir lokasinya dimana?
+    - lokasi dusun semilir dimana ya?
+    - saya ingin tahu lokasi dusun semilir?
+    - dusun semilir ini tempatnya dimana?
+    - dusun semilir alamatnya dimana?
+    - dimana alamat dusun semilir?
+    - dimana tempat dusun semilir ini?
+
+- intent: tiket_dusun_semilir
+  examples: |
+    - berapa sih tiket objek wisata dusun semilir?
+    - tiket objek wisata dusun semilir?
+    - tiket dusun semilir
+    - berapa tiket dusun semilir?
+    - berapa tiket dusun semilir nya?
+    - saya mau tau tiket dusun semilir dong
+    - aku mau tau tiket dusun semilir dong
+    - mau tau tiketnya dusun semilir
+    - pengen tau tiketnya dusun semilir
+    - tiketnya dusun semilir berapa aja 
+    - tiketnyanya dusun semilir berapa?
+
+- intent: fasilitas_dusun_semilir
+  examples: |
+    - dusun semilir apa saja fasilitasnya?
+    - apa fasilitas di dusun semilir? 
+    - ada fasilitas apa saja di dusun semilir?
+    - fasilitas apa saja yang diberikan dusun semilir?
+    - fasilitas dusun semilir apa saja?
+
+- intent: jamoperasional_dusun_semilir
+  examples: |
+    - jam operasional dusun semilir kapan aja ya?
+    - kapan jam operasional sdusun semilir?
+    - jam opersional wisata dusun semilir nya kapan ya?
+    - jam operasional dusun semilir
+    - buka jam berapa dusun semilir nya?
+    - operasional dusun semilir
+    - bukanya dari jam berapa dusun semilir nya?
+    - jam berapa wisata dusun semilir nya buka?
+    - jam berapa wisata dusun semilir nya open?
+    - open jam berapa wisata dusun semilir nya?
+    - dusun semilir buka jam berapa ya?
+    - buka dusun semilir
+    - jam operasional dusun semilir
+
+- intent: semarang
+  examples: |
+    - ya
+
+- intent: lokasi_art
+  examples: |
+    - semarang contemporary art gallery lokasinya dimana?
+    - lokasi semarang contemporary art gallery dimana ya?
+    - saya ingin tahu lokasi semarang contemporary art gallery?
+    - semarang contemporary art gallery ini tempatnya dimana?
+    - semarang contemporary art gallery alamatnya dimana?
+    - dimana alamat semarang contemporary art gallery?
+    - dimana tempat semarang contemporary art gallery ini?
+
+- intent: tiket_art
+  examples: |
+    - berapa sih tiket objek wisata semarang contemporary art gallery?
+    - tiket objek wisata semarang contemporary art gallery?
+    - tiketsemarang contemporary art gallery
+    - berapa tiket semarang contemporary art gallery?
+    - berapa tiket semarang contemporary art gallery nya?
+    - saya mau tau tiket semarang contemporary art gallery dong
+    - aku mau tau tiket semarang contemporary art gallery dong
+    - mau tau tiketnya semarang contemporary art gallery
+    - pengen tau tiketnya semarang contemporary art gallery
+    - tiketnya semarang contemporary art gallery berapa aja 
+    - tiketnyanya semarang contemporary art gallery berapa?
+
+- intent: fasilitas_art
+  examples: |
+    - semarang contemporary art gallery apa saja fasilitasnya?
+    - apa fasilitas di semarang contemporary art gallery? 
+    - ada fasilitas apa saja di semarang contemporary art gallery?
+    - fasilitas apa saja yang diberikan semarang contemporary art gallery?
+    - fasilitas semarang contemporary art gallery apa saja?
+
+- intent: jamoperasional_art
+  examples: |
+    - jam operasional semarang contemporary art gallery kapan aja ya?
+    - kapan jam operasional semarang contemporary art gallery?
+    - jam opersional wisata semarang contemporary art gallery nya kapan ya?
+    - jam operasional semarang contemporary art gallery
+    - buka jam berapa semarang contemporary art gallery nya?
+    - operasional semarang contemporary art gallery
+    - bukanya dari jam berapa semarang contemporary art gallery nya?
+    - jam berapa wisata semarang contemporary art gallery nya buka?
+    - jam berapa wisata semarang contemporary art gallery nya open?
+    - open jam berapa wisata semarang contemporary art gallery nya?
+    - semarang contemporary art gallery buka jam berapa ya?
+    - buka semarang contemporary art gallery
+    - jam operasional semarang contemporary art gallery
+
+- intent: kota_tua
+  examples: |
+    - ya
+
+- intent: lokasi_koeta
+  examples: |
+    - koeta toea lokasinya dimana?
+    - lokasi koeta toea dimana ya?
+    - saya ingin tahu lokasi koeta toea?
+    - koeta toea ini tempatnya dimana?
+    - koeta toea alamatnya dimana?
+    - dimana alamat koeta toea?
+    - dimana tempat koeta toea ini?
+
+- intent: tiket_koeta
+  examples: |
+    - berapa sih tiket objek wisata koeta toea?
+    - tiket objek wisata koeta toea?
+    - tiket koeta toea
+    - berapa tiket koeta toea?
+    - berapa tiket koeta toea nya?
+    - saya mau tau tiket koeta toea dong
+    - aku mau tau tiket koeta toea dong
+    - mau tau tiketnya koeta toea
+    - pengen tau tiketnya koeta toea
+    - tiketnya koeta toea berapa aja 
+    - tiketnyanya koeta toea berapa?
+
+- intent: fasilitas_koeta
+  examples: |
+    - koeta toea apa saja fasilitasnya?
+    - apa fasilitas di koeta toea? 
+    - ada fasilitas apa saja di koeta toea?
+    - fasilitas apa saja yang diberikan koeta toea?
+    - fasilitas koeta toea apa saja?
+
+- intent: jamoperasional_koeta
+  examples: |
+    - jam operasional koeta toea kapan aja ya?
+    - kapan jam operasional koeta toea?
+    - jam opersional wisata koeta toea nya kapan ya?
+    - jam operasional koeta toea
+    - buka jam berapa koeta toea nya?
+    - operasional koeta toea
+    - bukanya dari jam berapa koeta toea nya?
+    - jam berapa wisata koeta toea nya buka?
+    - jam berapa wisata koeta toea nya open?
+    - open jam berapa wisata koeta toea nya?
+    - koeta toea buka jam berapa ya?
+    - buka koeta toea
+    - jam operasional koeta toea
+
+- intent: ferris
+  examples: |
+    - ya
+
+- intent: lokasi_ferris
+  examples: |
+    - ferris wheel citra grand lokasinya dimana?
+    - lokasi ferris wheel citra grand dimana ya?
+    - saya ingin tahu lokasi ferris wheel citra grand?
+    - ferris wheel citra grand ini tempatnya dimana?
+    - ferris wheel citra grand alamatnya dimana?
+    - dimana alamat ferris wheel citra grand?
+    - dimana tempat ferris wheel citra grand ini?
+    - tempat ferris
+    - lokasi ferris
+
+- intent: tiket_ferris
+  examples: |
+    - berapa sih tiket objek wisata ferris wheel citra grand?
+    - tiket objek wisata ferris wheel citra grand?
+    - tiket ferris wheel citra grand
+    - berapa tiket ferris wheel citra grand?
+    - berapa tiket ferris wheel citra grand nya?
+    - saya mau tau tiket ferris wheel citra grand dong
+    - aku mau tau tiket ferris wheel citra grand dong
+    - mau tau tiketnya ferris wheel citra grand
+    - pengen tau tiketnya ferris wheel citra grand
+    - tiketnya ferris wheel citra grand berapa aja 
+    - tiketnyanya ferris wheel citra grand berapa?
+    - tiket ferris
+
+- intent: fasilitas_ferris
+  examples: |
+    - ferris wheel citra grand apa saja fasilitasnya?
+    - apa fasilitas di ferris wheel citra grand? 
+    - ada fasilitas apa saja di ferris wheel citra grand?
+    - fasilitas apa saja yang diberikan ferris wheel citra grand?
+    - fasilitas ferris wheel citra grand apa saja?
+    - fasilitas ferris
+
+- intent: jamoperasional_ferris
+  examples: |
+    - jam operasional ferris wheel citra grand kapan aja ya?
+    - kapan jam operasional ferris wheel citra grand?
+    - jam opersional wisata ferris wheel citra grand nya kapan ya?
+    - jam operasional ferris wheel citra grand
+    - buka jam berapa ferris wheel citra grand nya?
+    - operasional ferris wheel citra grand
+    - bukanya dari jam berapa ferris wheel citra grand nya?
+    - jam berapa wisata ferris wheel citra grand nya buka?
+    - jam berapa wisata ferris wheel citra grand nya open?
+    - open jam berapa wisata ferris wheel citra grand nya?
+    - ferris wheel citra grand buka jam berapa ya?
+    - buka ferris
+    - jam operasional ferris
+
+- intent: wisata_sejarah
+  examples: |
+    - ya
+
+- intent: kota_lama
+  examples: |
+    - ya
+
+- intent: lokasi_kota_lama
+  examples: |
+    - kota lama semarang lokasinya dimana?
+    - lokasi kota lama semarang dimana ya?
+    - saya ingin tahu lokasi kota lama semarang?
+    - kota lama semarang ini tempatnya dimana?
+    - kota lama semarang alamatnya dimana?
+    - dimana alamat kota lama semarang?
+    - dimana tempat kota lama semarang ini?
+    - tempat kota
+    - lokasi kota
+
+- intent: tiket_kota_lama
+  examples: |
+    - berapa sih tiket objek wisata kota lama semarang?
+    - tiket objek wisata kota lama semarang?
+    - tiket kota lama semarang
+    - berapa tiket kota lama semarang?
+    - berapa tiket kota lama semarang nya?
+    - saya mau tau tiket kota lama semarang dong
+    - aku mau tau tiket kota lama semarang dong
+    - mau tau tiketnya kota lama semarang
+    - pengen tau tiketnya kota lama semarang
+    - tiketnya kota lama semarang berapa aja 
+    - tiketnyanya kota lama semarang berapa?
+    - tiket kota
+
+- intent: fasilitas_kota_lama
+  examples: |
+    - kota lama semarang apa saja fasilitasnya?
+    - apa fasilitas di kota lama semarang? 
+    - ada fasilitas apa saja di kota lama semarang?
+    - fasilitas apa saja yang diberikan kota lama semarang?
+    - fasilitas kota lama semarang apa saja?
+    - fasilitas kota lama
+
+- intent: jamoperasional_kota_lama
+  examples: |
+    - jam operasional kota lama semarang kapan aja ya?
+    - kapan jam operasionalkota lama semarang?
+    - jam opersional wisata kota lama semarang nya kapan ya?
+    - jam operasional kota lama semarang
+    - buka jam berapa kota lama semarang nya?
+    - operasional kota lama semarang
+    - bukanya dari jam berapa kota lama semarang nya?
+    - jam berapa wisata kota lama semarang nya buka?
+    - jam berapa wisata kota lama semarang nya open?
+    - open jam berapa wisata kota lama semarang nya?
+    - kota lama semarang buka jam berapa ya?
+    - buka kota
+    - jam operasional kota
+
+- intent: lawang_sewu
+  examples: |
+    - ya
+
+- intent: lokasi_lawang
+  examples: |
+    - lawang sewu lokasinya dimana?
+    - lokasi lawang sewu dimana ya?
+    - saya ingin tahu lokasi lawang sewu?
+    - lawang sewu ini tempatnya dimana?
+    - lawang sewu alamatnya dimana?
+    - dimana alamat lawang sewu?
+    - dimana tempat lawang sewu ini?
+    - tempat lawang
+    - lokasi lawang
+
+- intent: tiket_lawang
+  examples: |
+    - berapa sih tiket objek wisata lawang sewu?
+    - tiket objek wisata lawang sewu?
+    - tiket lawang sewu
+    - berapa tiket lawang sewu?
+    - berapa tiket lawang sewu nya?
+    - saya mau tau tiket lawang sewu dong
+    - aku mau tau tiket lawang sewu dong
+    - mau tau tiketnya lawang sewu
+    - pengen tau tiketnya lawang sewu
+    - tiketnya lawang sewu berapa aja 
+    - tiketnyanya lawang sewu berapa?
+    - tiket lawang
+
+- intent: fasilitas_lawang_sewu
+  examples: |
+    - lawang sewu apa saja fasilitasnya?
+    - apa fasilitas di lawang sewu? 
+    - ada fasilitas apa saja di lawang sewu?
+    - fasilitas apa saja yang diberikan lawang sewu?
+    - fasilitas lawang sewu apa saja?
+    - fasilitas lawang sewu
+
+- intent: jamoperasional_lawang_sewu
+  examples: |
+    - jam operasional lawang sewu kapan aja ya?
+    - kapan jam operasional lawang sewu?
+    - jam opersional wisata lawang sewu nya kapan ya?
+    - jam operasional lawang sewu
+    - buka jam berapa lawang sewu nya?
+    - operasional lawang sewu
+    - bukanya dari jam berapa lawang sewu nya?
+    - jam berapa wisata lawang sewu nya buka?
+    - jam berapa wisata lawang sewu nya open?
+    - open jam berapa wisata lawang sewu nya?
+    - lawang sewu buka jam berapa ya?
+    - buka lawang
+    - jam operasional lawang
+
+- intent: candi
+  examples: |
+    - ya
+
+- intent: lokasi_candi
+  examples: |
+    - candi gedong songo lokasinya dimana?
+    - lokasi candi gedong songo dimana ya?
+    - saya ingin tahu lokasi candi gedong songo?
+    - candi gedong songo ini tempatnya dimana?
+    - candi gedong songo alamatnya dimana?
+    - dimana alamat candi gedong songo?
+    - dimana tempat candi gedong songo ini?
+    - tempat candi
+    - lokasi candi
+
+- intent: tiket_candi
+  examples: |
+    - berapa sih tiket objek wisata candi gedong songo?
+    - tiket objek wisata candi gedong songo?
+    - tiket candi gedong songo
+    - berapa tiket candi gedong songo?
+    - berapa tiket candi gedong songo nya?
+    - saya mau tau tiket candi gedong songo dong
+    - aku mau tau tiket candi gedong songo dong
+    - mau tau tiketnya candi gedong songo
+    - pengen tau tiketnya candi gedong songo
+    - tiketnya candi gedong songo berapa aja 
+    - tiketnya candi gedong songo berapa?
+    - tiket candi
+
+- intent: fasilitas_candi
+  examples: |
+    - candi gedong songo apa saja fasilitasnya?
+    - apa fasilitas di candi gedong songo? 
+    - ada fasilitas apa saja di candi gedong songo?
+    - fasilitas apa saja yang diberikan candi gedong songo?
+    - fasilitas candi gedong songo apa saja?
+    - fasilitas candi
+
+- intent: jamoperasional_candi
+  examples: |
+    - jam operasional candi gedong songo kapan aja ya?
+    - kapan jam operasional candi gedong songo?
+    - jam opersional wisata candi gedong songo nya kapan ya?
+    - jam operasional candi gedong songo
+    - buka jam berapa candi gedong songo nya?
+    - operasional candi gedong songo
+    - bukanya dari jam berapa candi gedong songo nya?
+    - jam berapa wisata candi gedong songo nya buka?
+    - jam berapa wisata candi gedong songo nya open?
+    - open jam berapa wisata candi gedong songo nya?
+    - candi gedong songo buka jam berapa ya?
+    - buka candi
+    - jam operasional candi
+
+- intent: museum_mandala
+  examples: |
+    - ya
+
+- intent: lokasi_mandala
+  examples: |
+    - museum mandala lokasinya dimana?
+    - lokasi museum mandala dimana ya?
+    - saya ingin tahu lokasi museum mandala?
+    - museum mandala ini tempatnya dimana?
+    - museum mandala alamatnya dimana?
+    - dimana alamat museum mandala?
+    - dimana tempat museum mandala ini?
+    - tempat museum mandala
+    - lokasi museum mandala
+
+- intent: tiket_mandala
+  examples: |
+    - berapa sih tiket objek wisata museum mandala?
+    - tiket objek wisata museum mandala?
+    - tiket museum mandala
+    - berapa tiket museum mandala?
+    - berapa tiket museum mandala nya?
+    - saya mau tau tiket museum mandala dong
+    - aku mau tau tiket museum mandala dong
+    - mau tau tiketnya museum mandala
+    - pengen tau tiketnya museum mandala
+    - tiketnya museum mandala berapa aja 
+    - tiketnya museum mandala berapa?
+    - tiket museum mandala
+
+- intent: fasilitas_mandala
+  examples: |
+    - museum mandala apa saja fasilitasnya?
+    - apa fasilitas di museum mandala? 
+    - ada fasilitas apa saja di museum mandala?
+    - fasilitas apa saja yang diberikan museum mandala?
+    - fasilitas museum mandala apa saja?
+    - fasilitas mandala
+
+- intent: jamoperasional_mandala
+  examples: |
+    - jam operasional museum mandala kapan aja ya?
+    - kapan jam operasional museum mandala?
+    - jam opersional wisata museum mandala nya kapan ya?
+    - jam operasional museum mandala
+    - buka jam berapa museum mandala nya?
+    - operasional museum mandala
+    - bukanya dari jam berapa museum mandala nya?
+    - jam berapa wisata museum mandala nya buka?
+    - jam berapa wisata museum mandala nya open?
+    - open jam berapa wisata museum mandala nya?
+    - museum mandala buka jam berapa ya?
+    - buka mandala
+    - jam operasional mandala
+
+- intent: museum_ronggo
+  examples: |
+    - ya
+
+- intent: lokasi_ronggowarsito
+  examples: |
+    - museum ronggowarsito lokasinya dimana?
+    - lokasi museum ronggowarsito dimana ya?
+    - saya ingin tahu lokasi museum ronggowarsito?
+    - museum ronggowarsito ini tempatnya dimana?
+    - museum ronggowarsito alamatnya dimana?
+    - dimana alamat museum ronggowarsito?
+    - dimana tempat museum ronggowarsito ini?
+    - tempat ronggowarsito
+    - lokasi ronggowarsito
+
+- intent: tiket_ronggowarsito
+  examples: |
+    - berapa sih tiket objek wisata museum ronggowarsito?
+    - tiket objek wisata museum ronggowarsito?
+    - tiket museum ronggowarsito
+    - berapa tiket museum ronggowarsito?
+    - berapa tiket museum ronggowarsito nya?
+    - saya mau tau tiket museum ronggowarsito dong
+    - aku mau tau tiket museum ronggowarsito dong
+    - mau tau tiketnya museum ronggowarsito
+    - pengen tau tiketnya museum ronggowarsito
+    - tiketnya museum ronggowarsito berapa aja 
+    - tiketnya museum ronggowarsito berapa?
+    - tiket ronggowarsito
+
+- intent: fasilitas_ronggowarsito
+  examples: |
+    - museum ronggowarsito apa saja fasilitasnya?
+    - apa fasilitas di museum ronggowarsito? 
+    - ada fasilitas apa saja di museum ronggowarsito?
+    - fasilitas apa saja yang diberikan museum ronggowarsito?
+    - fasilitas museum ronggowarsito apa saja?
+    - fasilitas ronggowarsito
+
+- intent: jamoperasional_ronggowarsito
+  examples: |
+    - jam operasional museum ronggowarsito kapan aja ya?
+    - kapan jam operasional museum ronggowarsito?
+    - jam opersional wisata museum ronggowarsito nya kapan ya?
+    - jam operasional museum ronggowarsito
+    - buka jam berapa museum ronggowarsito nya?
+    - operasional museum ronggowarsito
+    - bukanya dari jam berapa museum ronggowarsito nya?
+    - jam berapa wisata museum ronggowarsito nya buka?
+    - jam berapa wisata museum ronggowarsito nya open?
+    - open jam berapa wisata museum ronggowarsito nya?
+    - museum ronggowarsito buka jam berapa ya?
+    - buka ronggowarsito
+    - jam operasional ronggowarsito
+
+- intent: museum_kereta
+  examples: |
+    - ya
+
+- intent: lokasi_kereta
+  examples: |
+    - museum kereta api ambarawa lokasinya dimana?
+    - lokasi museum kereta api ambarawa  dimana ya?
+    - saya ingin tahu lokasi museum kereta api ambarawa ?
+    - museum kereta api ambarawa ini tempatnya dimana?
+    - museum kereta api ambarawa alamatnya dimana?
+    - dimana alamat museum kereta api ambarawa?
+    - dimana tempat museum kereta api ambarawa ini?
+    - tempat kereta api
+    - lokasi kereta api
+
+- intent: tiket_kereta
+  examples: |
+    - berapa sih tiket objek wisata museum kereta api ambarawa?
+    - tiket objek wisata museum kereta api ambarawa?
+    - tiket museum kereta api ambarawa
+    - berapa tiket museum kereta api ambarawa?
+    - berapa tiket museum kereta api ambarawa nya?
+    - saya mau tau tiket museum kereta api ambarawa dong
+    - aku mau tau tiket museum kereta api ambarawa dong
+    - mau tau tiketnya museum kereta api ambarawa
+    - pengen tau tiketnya museum kereta api ambarawa
+    - tiketnya museum kereta api ambarawa berapa aja 
+    - tiketnya museum kereta api ambarawa berapa?
+    - tiket kereta
+
+- intent: fasilitas_kereta
+  examples: |
+    - museum kereta api ambarawa apa saja fasilitasnya?
+    - apa fasilitas di museum kereta api ambarawa? 
+    - ada fasilitas apa saja di museum kereta api ambarawa?
+    - fasilitas apa saja yang diberikan museum kereta api ambarawa?
+    - fasilitas museum kereta api ambarawa apa saja?
+    - fasilitas kereta
+
+- intent: jamoperasional_kereta
+  examples: |
+    - jam operasional museum kereta api ambarawa kapan aja ya?
+    - kapan jam operasional museum kereta api ambarawa?
+    - jam opersional wisata museum kereta api ambarawa nya kapan ya?
+    - jam operasional museum kereta api ambarawa
+    - buka jam berapa museum kereta api ambarawa nya?
+    - operasional museum kereta api ambarawa
+    - bukanya dari jam berapa museum kereta api ambarawa nya?
+    - jam berapa wisata museum kereta api ambarawa nya buka?
+    - jam berapa wisata museum kereta api ambarawa nya open?
+    - open jam berapa wisata museum kereta api ambarawa nya?
+    - museum kereta api ambarawa buka jam berapa ya?
+    - buka kereta
+    - jam operasional kereta
+
+- intent: museum_rekor
+  examples: |
+    - ya
+
+- intent: lokasi_rekor
+  examples: |
+    - museum rekor dunia indonesia lokasinya dimana?
+    - lokasi museum rekor dunia indonesia dimana ya?
+    - saya ingin tahu lokasi museum rekor dunia indonesia?
+    - museum rekor dunia indonesia ini tempatnya dimana?
+    - museum rekor dunia indonesia alamatnya dimana?
+    - dimana alamat museum rekor dunia indonesia?
+    - dimana tempat museum rekor dunia indonesia ini?
+    - tempat rekor
+    - lokasi rekor
+
+- intent: tiket_rekor
+  examples: |
+    - berapa sih tiket objek wisata museum rekor dunia indonesia?
+    - tiket objek wisata museum rekor dunia indonesia?
+    - tiket museum rekor dunia indonesia
+    - berapa tiket museum rekor dunia indonesia?
+    - berapa tiket museum rekor dunia indonesia nya?
+    - saya mau tau tiket museum rekor dunia indonesia dong
+    - aku mau tau tiket museum rekor dunia indonesia dong
+    - mau tau tiketnya museum rekor dunia indonesia
+    - pengen tau tiketnya museum rekor dunia indonesia
+    - tiketnya museum rekor dunia indonesia berapa aja 
+    - tiketnya museum rekor dunia indonesia berapa?
+    - tiket rekor
+
+- intent: fasilitas_rekor
+  examples: |
+    - museum rekor dunia indonesia apa saja fasilitasnya?
+    - apa fasilitas di museum rekor dunia indonesia? 
+    - ada fasilitas apa saja di museum rekor dunia indonesia?
+    - fasilitas apa saja yang diberikan museum rekor dunia indonesia?
+    - fasilitas museum rekor dunia indonesia apa saja?
+    - fasilitas rekor
+
+- intent: jamoperasional_rekor
+  examples: |
+    - jam operasional museum rekor dunia indonesia kapan aja ya?
+    - kapan jam operasional museum rekor dunia indonesia?
+    - jam opersional wisata mmuseum rekor dunia indonesia nya kapan ya?
+    - jam operasional museum rekor dunia indonesia
+    - buka jam berapa museum rekor dunia indonesia nya?
+    - operasional museum rekor dunia indonesia
+    - bukanya dari jam berapa museum rekor dunia indonesia nya?
+    - jam berapa wisata museum rekor dunia indonesia nya buka?
+    - jam berapa wisata museum rekor dunia indonesia nya open?
+    - open jam berapa wisata museum rekor dunia indonesia nya?
+    - museum rekor dunia indonesia buka jam berapa ya?
+    - buka rekor
+    - jam operasional rekor
+
+- intent: wisata_tidak
+  examples: |
+    - tidak
+
+- intent: wisata_pantai_tidak
+  examples: |
+    - tidak
+
+- intent: wisata_religi_tidak
+  examples: |
+    - tidak
+
+- intent: wisata_hiburan_tidak
+  examples: |
+    - tidak
+
+- intent: wisata_sejarah_tidak
+  examples: |
+    - tidak
+
+- intent: ketentuan
+  examples: |
+    - apa 
+
+- intent: ketentuan_barang
+  examples: |
+    - bagaimana
+
+- intent: start
+  examples: |
+    - start
+
+- intent: penutup
+  examples: |
+    - Terimakasih
+    - Oke
+    - Okay
+    - Ok
+    - sampai jumpa
+    - selesai
+    - daa
+    - bye
+    - see you
+    - Saya ingin berhenti
+    - Stop
+    - berhenti
+    - akhiri chat
+    - makasih
+
+- intent: bot_challenge
+  examples: |
+    - apakah kamu sebuah bot?
+    - kamu siapa?
+    - apakah saya berbicara dengan bot?

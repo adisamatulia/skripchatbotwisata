@@ -1,0 +1,834 @@
+version: "3.1"
+
+stories:
+
+- story: awalan
+  steps:
+  - intent: sapa
+  - action: utter_sapa
+
+- story: ya
+  steps:
+  - intent: ya
+  - action: utter_ya
+
+- story: wisata_tidak
+  steps:
+  - intent: wisata_tidak
+  - action: utter_tidak
+
+- story: wisata_pantai_tidak
+  steps:
+  - intent: wisata_pantai_tidak
+  - action: utter_pantai_tidak
+
+- story: wisata_religi_tidak
+  steps:
+  - intent: wisata_religi_tidak
+  - action: utter_religi_tidak
+
+- story: wisata_hiburan_tidak
+  steps:
+  - intent: wisata_hiburan_tidak
+  - action: utter_hiburan_tidak
+
+- story: wisata_sejarah_tidak
+  steps:
+  - intent: wisata_sejarah_tidak
+  - action: utter_sejarah_tidak
+
+- story: wisata_alam
+  steps:
+  - intent: wisata_alam
+  - action: utter_wisata_alam
+
+- story: umbul_sidomukti
+  steps:
+  - intent: umbul_sidomukti
+  - action: utter_umbulsidomukti
+
+- story: pinuspark_ungaran
+  steps:
+  - intent: pinuspark_ungaran
+  - action: utter_pinuspark_ungaran
+
+- story: cimoory
+  steps:
+  - intent: cimoory
+  - action: utter_cimoory
+
+- story: kopeng
+  steps:
+  - intent: kopeng_treetop_adventure_park
+  - action: utter_kopeng
+
+- story: eling_bening
+  steps:
+  - intent: eling_bening
+  - action: utter_eling
+
+- story: taman_bunga_celosia
+  steps:
+  - intent: taman_bunga_celosia
+  - action: utter_tamanbungacelosia
+
+- story: ayanaz
+  steps:
+  - intent: ayanaz_gedong_songo
+  - action: utter_ayanaz
+
+- story: puri_maerokoco
+  steps:
+  - intent: puri_maerokoco
+  - action: utter_puri_maerokoco
+
+- story: lokasi_umbul
+  steps:
+  - intent: lokasi_umbul
+  - action: utter_lokasi_umbul
+
+- story: lokasi_pinus
+  steps:
+  - intent: lokasi_pinus
+  - action: utter_lokasi_pinus
+
+- story: lokasi_cimoory
+  steps:
+  - intent: lokasi_cimoory
+  - action: utter_lokasi_cimoory
+
+- story: lokasi_kopeng
+  steps:
+  - intent: lokasi_kopeng
+  - action: utter_lokasi_kopeng
+
+- story: lokasi_eling
+  steps:
+  - intent: lokasi_eling
+  - action: utter_lokasi_eling
+
+- story: lokasi_celosia
+  steps:
+  - intent: lokasi_celosia
+  - action: utter_lokasi_celosia
+
+- story: lokasi_ayanaz
+  steps:
+  - intent: lokasi_ayanaz
+  - action: utter_lokasi_ayanaz
+
+- story: lokasi_puri
+  steps:
+  - intent: lokasi_puri
+  - action: utter_lokasi_puri
+
+- story: tiketumbulsidomukti
+  steps:
+  - intent: tiketumbulsidomukti
+  - action: utter_tiketumbulsidomukti
+
+- story: tiketpinusparkungaran
+  steps:
+  - intent: tiketpinusparkungaran
+  - action: utter_tiketpinusparkungaran
+
+- story: tiketcimoorysemarang
+  steps:
+  - intent: tiketcimoorysemarang
+  - action: utter_tiketcimoorysemarang
+
+- story: tiketkopeng
+  steps:
+  - intent: tiketkopeng
+  - action: utter_tiketkopeng
+
+- story: tiketelingbening
+  steps:
+  - intent: tiketelingbening
+  - action: utter_tiketelingbening
+
+- story: tiketcelosia
+  steps:
+  - intent: tikettamanbunga
+  - action: utter_tikettamanbunga
+
+- story: tiketayanaz
+  steps:
+  - intent: tiketayanaz
+  - action: utter_tiketayanaz
+
+- story: tiketpuri
+  steps:
+  - intent: tiketpuri
+  - action: utter_tiketpuri
+
+- story: fasilitas
+  steps:
+  - intent: fasilitas
+  - action: utter_fasilitas
+
+- story: fasilitas_pinus
+  steps:
+  - intent: fasilitas_pinus
+  - action: utter_fasilitas_pinus
+
+- story: fasilitas_cimoory
+  steps:
+  - intent: fasilitas_cimoory
+  - action: utter_fasilitas_cimoory
+
+- story: fasilitas_kopeng
+  steps:
+  - intent: fasilitas_kopeng
+  - action: utter_fasilitas_kopeng
+
+- story: fasilitas_elingbening
+  steps:
+  - intent: fasilitas_eling
+  - action: utter_fasilitas_eling
+
+- story: fasilitas_celosia
+  steps:
+  - intent: fasilitas_celosia
+  - action: utter_fasilitas_celosia
+
+- story: fasilitas_ayanaz
+  steps:
+  - intent: fasilitas_ayanaz
+  - action: utter_fasilitas_ayanaz
+
+- story: fasilitas_puri
+  steps:
+  - intent: fasilitas_puri
+  - action: utter_fasilitas_puri
+
+- story: jamoperasional
+  steps:
+  - intent: jamoperasional
+  - action: utter_jamoperasional
+
+- story: jamoperasional_pinus
+  steps:
+  - intent: jamoperasional_pinus
+  - action: utter_jamoperasional_pinus
+
+- story: jamoperasional_cimoory
+  steps:
+  - intent: jamoperasional_cimoory
+  - action: utter_jamoperasional_cimoory
+
+- story: jamoperasional_kopeng
+  steps:
+  - intent: jamoperasional_kopeng
+  - action: utter_jamoperasional_kopeng
+
+- story: jamoperasional_celosia
+  steps:
+  - intent: jamoperasional_celosia
+  - action: utter_jamoperasional_celosia
+
+- story: jamoperasional_eling
+  steps:
+  - intent: jamoperasional_eling
+  - action: utter_jamoperasional_eling
+
+- story: jamoperasional_ayanaz
+  steps:
+  - intent: jamoperasional_ayanaz
+  - action: utter_jamoperasional_ayanaz
+
+- story: jamoperasional_puri
+  steps:
+  - intent: jamoperasional_puri
+  - action: utter_jamoperasional_puri
+
+- story: wisata_pantai
+  steps:
+  - intent: wisata_pantai
+  - action: utter_wisata_pantai
+
+- story: pantai_marina
+  steps: 
+  - intent: pantai_marina
+  - action: utter_pantai_marina
+
+- story: lokasi_pantai_marina
+  steps: 
+  - intent: lokasi_pantai_marina
+  - action: utter_lokasi_pantai_marina
+
+- story: tiket_pantai_marina
+  steps: 
+  - intent: tiket_pantai_marina
+  - action: utter_tiket_pantai_marina
+
+- story: fasilitas_pantai_marina
+  steps: 
+  - intent: fasilitas_pantai_marina
+  - action: utter_fasilitas_pantai_marina
+
+- story: jamoperasional_pantai_marina
+  steps: 
+  - intent: jamoperasional_pantai_marina
+  - action: utter_jamoperasional_pantai_marina
+
+- story: pantai_baruna
+  steps: 
+  - intent: pantai_baruna
+  - action: utter_pantai_baruna
+
+- story: lokasi_pantai_baruna
+  steps: 
+  - intent: lokasi_pantai_baruna
+  - action: utter_lokasi_pantai_baruna
+
+- story: tiket_pantai_baruna
+  steps: 
+  - intent: tiket_pantai_baruna
+  - action: utter_tiket_pantai_baruna
+
+- story: fasilitas_pantai_baruna
+  steps: 
+  - intent: fasilitas_pantai_baruna
+  - action: utter_fasilitas_pantai_baruna
+
+- story: jamoperasional_pantai_baruna
+  steps: 
+  - intent: jamoperasional_pantai_baruna
+  - action: utter_jamoperasional_pantai_baruna
+
+- story: pantai_cipta
+  steps: 
+  - intent: pantai_cipta
+  - action: utter_pantai_cipta
+
+- story: lokasi_pantai_cipta
+  steps: 
+  - intent: lokasi_pantai_cipta
+  - action: utter_lokasi_pantai_cipta
+
+- story: tiket_pantai_cipta
+  steps: 
+  - intent: tiket_pantai_cipta
+  - action: utter_tiket_pantai_cipta
+
+- story: fasilitas_pantai_cipta
+  steps: 
+  - intent: fasilitas_pantai_cipta
+  - action: utter_fasilitas_pantai_cipta
+
+- story: jamoperasional_pantai_cipta
+  steps: 
+  - intent: jamoperasional_pantai_cipta
+  - action: utter_jamoperasional_pantai_cipta
+
+- story: pantai_tirang
+  steps: 
+  - intent: pantai_tirang
+  - action: utter_pantai_tirang
+
+- story: lokasi_pantai_tirang
+  steps: 
+  - intent: lokasi_pantai_tirang
+  - action: utter_lokasi_pantai_tirang
+
+- story: tiket_pantai_tirang
+  steps: 
+  - intent: tiket_pantai_tirang
+  - action: utter_tiket_pantai_tirang
+
+- story: fasilitas_pantai_tirang
+  steps: 
+  - intent: fasilitas_pantai_tirang
+  - action: utter_fasilitas_pantai_tirang
+
+- story: jamoperasional_pantai_tirang
+  steps: 
+  - intent: jamoperasional_pantai_tirang
+  - action: utter_jamoperasional_pantai_tirang
+
+- story: pantai_maron
+  steps: 
+  - intent: pantai_maron
+  - action: utter_pantai_maron
+
+- story: lokasi_pantai_maron
+  steps: 
+  - intent: lokasi_pantai_maron
+  - action: utter_lokasi_pantai_maron
+
+- story: tiket_pantai_maron
+  steps: 
+  - intent: tiket_pantai_maron
+  - action: utter_tiket_pantai_maron
+
+- story: fasilitas_pantai_maron
+  steps: 
+  - intent: fasilitas_pantai_maron
+  - action: utter_fasilitas_pantai_maron
+
+- story: jamoperasional_pantai_maron
+  steps: 
+  - intent: jamoperasional_pantai_maron
+  - action: utter_jamoperasional_pantai_maron
+
+- story: wisata_religi
+  steps:
+  - intent: wisata_religi
+  - action: utter_wisata_religi
+
+- story: klenteng
+  steps:
+  - intent: klenteng_sam_poo_kong
+  - action: utter_klenteng_sam_poo_kong
+
+- story: lokasi_klenteng
+  steps: 
+  - intent: lokasi_klenteng
+  - action: utter_lokasi_klenteng
+
+- story: tiket_klenteng
+  steps: 
+  - intent: tiket_klenteng
+  - action: utter_tiket_klenteng
+
+- story: fasilitas_klenteng
+  steps: 
+  - intent: fasilitas_klenteng
+  - action: utter_fasilitas_kleteng
+
+- story: jamoperasional_klenteng
+  steps: 
+  - intent: jamoperasional_klenteng
+  - action: utter_jamoperasional_klenteng
+
+- story: masjid_agung
+  steps:
+  - intent: masjid_agung_semarang
+  - action: utter_masjid_agung_semarang
+
+- story: lokasi_masjid_agung
+  steps: 
+  - intent: lokasi_masjid_agung
+  - action: utter_lokasi_masjid_agung
+
+- story: tiket_masjid_agung
+  steps: 
+  - intent: tiket_masjidagung
+  - action: utter_tiket_masjidagung
+
+- story: fasilitas_masjid_agung
+  steps: 
+  - intent: fasilitas_masjid_agung
+  - action: utter_fasilitas_masjid_agung
+
+- story: jamoperasional_masjid_agung
+  steps: 
+  - intent: jamoperasional_masjid_agung
+  - action: utter_jamoperasional_masjid_agung
+
+- story: masjid_kapal
+  steps:
+  - intent: masjid_kapal_semarang
+  - action: utter_masjid_kapal_semarang
+
+- story: lokasi_masjid_kapal
+  steps: 
+  - intent: lokasi_masjid_kapal
+  - action: utter_lokasi_masjid_kapal
+
+- story: tiket_masjid_kapal
+  steps: 
+  - intent: tiket_masjid_kapal
+  - action: utter_tiket_masjid_kapal
+
+- story: fasilitas_masjid_kapal
+  steps: 
+  - intent: fasilitas_masjid_kapal
+  - action: utter_fasilitas_masjid_kapal
+
+- story: jamoperasional_masjid_kapal
+  steps: 
+  - intent: jamoperasional_masjid_kapal
+  - action: utter_jamoperasional_masjid_kapal
+
+- story: pura
+  steps:
+  - intent: pura_agung_girinatha
+  - action: utter_pura_agung_girinatha
+
+- story: lokasi_pura
+  steps: 
+  - intent: lokasi_pura
+  - action: utter_lokasi_pura
+
+- story: tiket_pura
+  steps: 
+  - intent: tiket_pura
+  - action: utter_tiket_pura
+
+- story: fasilitas_pura
+  steps: 
+  - intent: fasilitas_pura
+  - action: utter_fasilitas_pura
+
+- story: jamoperasional_pura
+  steps: 
+  - intent: jamoperasional_pura
+  - action: utter_jamoperasional_pura
+
+- story: pagoda
+  steps:
+  - intent: pagoda_avolakitesvara
+  - action: utter_pagoda_avolakitesvara
+
+- story: lokasi_pagoda
+  steps: 
+  - intent: lokasi_pagoda
+  - action: utter_lokasi_pagoda
+
+- story: tiket_pagoda
+  steps: 
+  - intent: tiket_pagoda
+  - action: utter_tiket_pagoda
+
+- story: fasilitas_pagoda
+  steps: 
+  - intent: fasilitas_pagoda
+  - action: utter_fasilitas_pagoda
+
+- story: jamoperasional_pagoda
+  steps: 
+  - intent: jamoperasional_pagoda
+  - action: utter_jamoperasional_pagoda
+
+- story: wisata_hiburan
+  steps:
+  - intent: wisata_hiburan
+  - action: utter_wisata_hiburan
+
+- story: saloka
+  steps:
+  - intent: saloka
+  - action: utter_saloka
+
+- story: lokasi_saloka
+  steps: 
+  - intent: lokasi_saloka
+  - action: utter_lokasi_saloka
+
+- story: tiket_saloka
+  steps: 
+  - intent: tiket_saloka
+  - action: utter_tiket_saloka
+
+- story: fasilitas_saloka
+  steps: 
+  - intent: fasilitas_saloka
+  - action: utter_fasilitas_saloka
+
+- story: jamoperasional_saloka
+  steps: 
+  - intent: jamoperasional_saloka
+  - action: utter_jamoperasional_saloka
+
+- story: semilir
+  steps:
+  - intent: dusun_semilir
+  - action: utter_dusun_semilir
+
+- story: lokasi_dusun_semilir
+  steps: 
+  - intent: lokasi_dusun_semilir
+  - action: utter_lokasi_dusun_semilir
+
+- story: tiket_dusun_semilir
+  steps: 
+  - intent: tiket_dusun_semilir
+  - action: utter_tiket_dusun_semilir
+
+- story: fasilitas_dusun_semilir
+  steps: 
+  - intent: fasilitas_dusun_semilir
+  - action: utter_fasilitas_dusun_semilir
+
+- story: jamoperasional_dusun_semilir
+  steps: 
+  - intent: jamoperasional_dusun_semilir
+  - action: utter_jamoperasional_dusun_semilir
+
+- story: semarang
+  steps:
+  - intent: semarang
+  - action: utter_semarang
+
+- story: lokasi_art
+  steps: 
+  - intent: lokasi_art
+  - action: utter_lokasi_art
+
+- story: tiket_art
+  steps: 
+  - intent: tiket_art
+  - action: utter_tiket_art
+
+- story: fasilitas_art
+  steps: 
+  - intent: fasilitas_art
+  - action: utter_fasilitas_art
+
+- story: jamoperasional_art
+  steps: 
+  - intent: jamoperasional_art
+  - action: utter_jamoperasional_art
+
+- story: kota_tua
+  steps:
+  - intent: kota_tua
+  - action: utter_kota_tua
+
+- story: lokasi_koeta
+  steps: 
+  - intent: lokasi_koeta
+  - action: utter_lokasi_koeta
+
+- story: tiket_koeta
+  steps: 
+  - intent: tiket_koeta
+  - action: utter_tiket_koeta
+
+- story: fasilitas_koeta
+  steps: 
+  - intent: fasilitas_koeta
+  - action: utter_fasilitas_koeta
+
+- story: jamoperasional_koeta
+  steps: 
+  - intent: jamoperasional_koeta
+  - action: utter_jamoperasional_koeta
+
+- story: ferris
+  steps:
+  - intent: ferris
+  - action: utter_ferris
+
+- story: lokasi_ferris
+  steps: 
+  - intent: lokasi_ferris
+  - action: utter_lokasi_ferris
+
+- story: tiket_ferris
+  steps: 
+  - intent: tiket_ferris
+  - action: utter_tiket_ferris
+
+- story: fasilitas_ferris
+  steps: 
+  - intent: fasilitas_ferris
+  - action: utter_fasilitas_ferris
+
+- story: jamoperasional_ferris
+  steps: 
+  - intent: jamoperasional_ferris
+  - action: utter_jamoperasional_ferris
+
+- story: wisata_sejarah
+  steps:
+  - intent: wisata_sejarah
+  - action: utter_wisata_sejarah
+
+- story: kota_lama
+  steps:
+  - intent: kota_lama
+  - action: utter_kota_lama
+
+- story: lokasi_kota_lama
+  steps:
+  - intent: lokasi_kota_lama
+  - action: utter_lokasi_kota_lama
+
+- story: tiket_kota_lama
+  steps:
+  - intent: tiket_kota_lama
+  - action: utter_tiket_kota_lama
+
+- story: fasilitas_kota_lama
+  steps:
+  - intent: fasilitas_kota_lama
+  - action: utter_fasilitas_kota_lama
+
+- story: jamoperasional_kota_lama
+  steps: 
+  - intent: jamoperasional_kota_lama
+  - action: utter_jamoperasional_kota_lama
+
+- story: lawang_sewu
+  steps:
+  - intent: lawang_sewu
+  - action: utter_lawang_sewu
+
+- story: lokasi_lawang_sewu
+  steps:
+  - intent: lokasi_lawang
+  - action: utter_lokasi_lawang
+
+- story: tiket_lawang_sewu
+  steps:
+  - intent: tiket_lawang
+  - action: utter_tiket_lawang
+
+- story: fasilitas_lawang_sewu
+  steps:
+  - intent: fasilitas_lawang_sewu
+  - action: utter_fasilitas_lawang_sewu
+
+- story: jamoperasional_lawang_sewu
+  steps: 
+  - intent: jamoperasional_lawang_sewu
+  - action: utter_jamoperasional_lawang_sewu
+
+- story: candi
+  steps:
+  - intent: candi
+  - action: utter_candi
+
+- story: lokasi_candi
+  steps:
+  - intent: lokasi_candi
+  - action: utter_lokasi_candi
+
+- story: tiket_candi
+  steps:
+  - intent: tiket_candi
+  - action: utter_tiket_candi
+
+- story: fasilitas_candi
+  steps:
+  - intent: fasilitas_candi
+  - action: utter_fasilitas_candi
+
+- story: jamoperasional_candi
+  steps:
+  - intent: jamoperasional_candi
+  - action: utter_jamoperasional_candi
+
+- story: museum_mandala
+  steps:
+  - intent: museum_mandala
+  - action: utter_museum_mandala
+
+- story: lokasi_mandala
+  steps:
+  - intent: lokasi_mandala
+  - action: utter_lokasi_mandala
+
+- story: tiket_mandala
+  steps:
+  - intent: tiket_mandala
+  - action: utter_tiket_mandala
+
+- story: fasilitas_mandala
+  steps:
+  - intent: fasilitas_mandala
+  - action: utter_fasilitas_mandala
+
+- story: jamoperasional_mandala
+  steps:
+  - intent: jamoperasional_mandala
+  - action: utter_jamoperasional_mandala
+
+- story: museum_ronggo
+  steps:
+  - intent: museum_ronggo
+  - action: utter_museum_ronggo
+
+- story: lokasi_ronggowarsito
+  steps:
+  - intent: lokasi_ronggowarsito
+  - action: utter_lokasi_ronggowarsito
+
+- story: tiket_ronggowarsito
+  steps:
+  - intent: tiket_ronggowarsito
+  - action: utter_tiket_ronggowarsito
+
+- story: fasilitas_ronggowarsito
+  steps:
+  - intent: fasilitas_ronggowarsito
+  - action: utter_fasilitas_ronggowarsito
+
+- story: jamoperasional_ronggowarsito
+  steps:
+  - intent: jamoperasional_ronggowarsito
+  - action: utter_jamoperasional_ronggowarsito
+
+- story: museum_kereta
+  steps:
+  - intent: museum_kereta
+  - action: utter_museum_kereta
+
+- story: lokasi_kereta
+  steps:
+  - intent: lokasi_kereta
+  - action: utter_lokasi_kereta
+
+- story: tiket_kereta
+  steps:
+  - intent: tiket_kereta
+  - action: utter_tiket_kereta
+
+- story: fasilitas_kereta
+  steps:
+  - intent: fasilitas_kereta
+  - action: utter_fasilitas_kereta
+
+- story: jamoperasional_kereta
+  steps:
+  - intent: jamoperasional_kereta
+  - action: utter_jamoperasional_kereta
+
+- story: museum_rekor
+  steps:
+  - intent: museum_rekor
+  - action: utter_museum_rekor
+
+- story: lokasi_rekor
+  steps:
+  - intent: lokasi_rekor
+  - action: utter_lokasi_rekor
+
+- story: tiket_rekor
+  steps:
+  - intent: tiket_rekor
+  - action: utter_tiket_rekor
+
+- story: fasilitas_rekor
+  steps:
+  - intent: fasilitas_rekor
+  - action: utter_fasilitas_rekor
+
+- story: jamoperasional_rekor
+  steps:
+  - intent: jamoperasional_rekor
+  - action: utter_jamoperasional_rekor
+
+- story: ketentuan
+  steps:
+  - intent: ketentuan
+  - action: utter_ketentuan
+
+- story: ketentuan_barang
+  steps:
+  - intent: ketentuan_barang
+  - action: utter_ketentuanbarang
+
+- story: start
+  steps:
+  - intent: start
+  - action: utter_start
+
+- story: penutup
+  steps:
+  - intent: penutup
+  - action: utter_penutup
+
